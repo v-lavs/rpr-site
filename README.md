@@ -12,6 +12,4 @@ Starter include:
 1) Gulp basic setup for theme development
 2) Installed Bootstrap 4 grid
 3) jQuery v.3.0.0
-"# chernyshov" 
-"# stone" 
 "# rpr-site" 

@@ -1,17 +1,12 @@
 @import 'utils/variables';
 @import 'utils/mixins';
 
-
 @import 'base/reset';
 @import 'base/base';
 @import 'base/typography';
 
 @import 'components/button';
-//@import 'components/slider';
 @import 'components/nav';
-//@import 'components/search';
-//@import 'components/popup';
-
 
 @import 'layout/sections/section-intro';
 @import 'layout/sections/section-how-take';
@@ -22,6 +17,6 @@
 @import 'layout/header';
 @import 'layout/footer';
 
-//@import 'pages/home';
+@import 'pages/instruction';
 
 

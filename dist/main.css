@@ -135,18 +135,6 @@ body {
   border: 0;
 }
 
-.color_warning {
-  color: #f49600;
-}
-
-.color_blue {
-  color: #0070ba;
-}
-
-.color_dark-red {
-  color: #800000;
-}
-
 .link {
   color: #202020;
   font-family: "Arial", sans-serif;
@@ -197,6 +185,7 @@ body {
   margin-right: 5px;
 }
 
+.page__title,
 .section__heading {
   color: #000000;
   font-family: "Source Code Pro", monospace;
@@ -217,6 +206,27 @@ body {
   width: 100vw;
   top: 60%;
   left: 100%;
+}
+
+.color_warning {
+  color: #f49600;
+}
+
+.color_blue {
+  color: #0070ba;
+}
+
+.color_dark-red {
+  color: #800000;
+}
+
+.upload-pdf {
+  width: 76px;
+  height: 76px;
+  padding: 3px 5px;
+  background-color: #ff0000;
+  display: inline-block;
+  text-align: center;
 }
 
 .dynamic-content p {
@@ -561,6 +571,7 @@ body {
 }
 
 .section-how-take .card-dosage {
+  display: block;
   position: relative;
   width: 25.25%;
   padding: 15px 28px;
@@ -886,7 +897,7 @@ body {
 
 .footer {
   width: 100%;
-  padding-bottom: 478px;
+  padding-bottom: 30vh;
 }
 
 .footer .container {
@@ -895,7 +906,6 @@ body {
 
 .footer .part-left {
   width: 30%;
-  padding-left: 135px;
   padding-top: 58px;
   padding-bottom: 58px;
 }
@@ -969,4 +979,82 @@ body {
   display: block;
   width: 100%;
   max-width: 100%;
+}
+
+.page-instruction .application {
+  padding-top: 13px;
+  padding-bottom: 20px;
+  color: #fff;
+}
+
+.page-instruction .application.bg-application {
+  position: relative;
+}
+
+.page-instruction .application.bg-application:before {
+  position: absolute;
+  content: '';
+  left: -100vw;
+  bottom: 0;
+  top: 0;
+  right: -100vw;
+  z-index: -1;
+}
+
+.page-instruction .application.bg-application_warninng:before {
+  background-color: #f49600;
+}
+
+.section-hero {
+  padding-top: 160px;
+}
+
+.section-hero .page__title {
+  margin-bottom: 28px;
+}
+
+.section-hero .instructions {
+  margin-bottom: 60px;
+}
+
+.section-hero .btn_small {
+  font-size: 24px;
+  padding: 10px 30px;
+  background-color: #fff;
+  color: #5e5e5e;
+  margin-right: 23px;
+}
+
+.section-hero .btn_small:last-child {
+  margin-right: 0;
+}
+
+.section-hero .btn_small.active_warning {
+  background-color: #ffc400;
+  color: #fff;
+}
+
+.section-hero .btn_small.active_blue {
+  background-color: #0070ba;
+  color: #fff;
+}
+
+.section-hero .btn_small.active_danger {
+  background-color: #bf1c0e;
+  color: #fff;
+}
+
+article .section__heading {
+  margin-bottom: 33px;
+}
+
+.section-producer {
+  padding-bottom: 234px;
+}
+
+.description-action {
+  font-family: "Source Code Pro", monospace;
+  font-size: 44px;
+  font-weight: 700;
+  margin-bottom: 38px;
 }

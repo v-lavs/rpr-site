@@ -1,0 +1,79 @@
+.page-instruction{
+  .application{
+    padding-top: 13px;
+    padding-bottom: 20px;
+    color: $white;
+    &.bg-application{
+      position: relative;
+      &:before{
+        position: absolute;
+        content: '';
+        left: -100vw;
+        bottom: 0;
+        top: 0;
+        right: -100vw;
+        z-index: -1;
+      }
+    }
+    &.bg-application_warninng:before{
+      background-color: $warning;
+    }
+  }
+}
+
+
+.section-hero {
+  padding-top: 160px;
+
+  .page__title {
+    margin-bottom: 28px;
+  }
+
+  .instructions {
+    margin-bottom: 60px;
+  }
+
+  .btn_small {
+    font-size: 24px;
+    padding: 10px 30px;
+    background-color: $white;
+    color: $grey;
+    margin-right: 23px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &.active_warning {
+      background-color: #ffc400;
+      color: $white;
+    }
+
+    &.active_blue {
+      background-color: $blue;
+      color: $white;
+    }
+
+    &.active_danger {
+      background-color: #bf1c0e;
+      color: $white;
+    }
+  }
+}
+
+article {
+  .section__heading {
+    margin-bottom: 33px;
+  }
+}
+
+.section-producer {
+  padding-bottom: 234px;
+}
+
+.description-action {
+  font-family: $secondary-font;
+  font-size: 44px;
+  font-weight: 700;
+  margin-bottom: 38px;
+}
