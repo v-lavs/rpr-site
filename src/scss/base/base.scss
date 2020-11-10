@@ -1,0 +1,136 @@
+.wrapper {
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  background-image: linear-gradient(to right, #f8f7f7, #eeebeb);
+  font: 300 22px $main-font;
+}
+
+.hide {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.color_warning {
+  color: #f49600;
+}
+
+.color_blue {
+  color: #0070ba;
+}
+
+.color_dark-red {
+  color: #800000;
+}
+
+.link {
+  color: #202020;
+  font-family: $helper-font;
+  font-size: 14px;
+  font-weight: 400;
+  transition: .35s;
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
+}
+
+.slogan {
+  font-family: $secondary-font;
+  color: #000;
+  line-height: .6;
+}
+
+.know-pharmacy {
+  display: flex;
+  align-items: flex-end;
+  font-size: 16px;
+  padding-right: 60px;
+  flex-shrink: 0;
+
+  &__content {
+    padding-left: 37px;
+  }
+
+  .location {
+    margin-bottom: 6px;
+  }
+
+  .cost {
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 15px;
+  }
+
+  .instructions {
+    display: flex;
+
+    .btn {
+      margin-right: 5px;
+      //&:hover,
+      //&:focus{
+      //  background-color: #0090ff;
+      //}
+      //&:first-child{
+      //  &:hover,
+      //  &:focus{
+      //    background-color: #f49600;
+      //  }
+      //}
+      //&:last-child{
+      //  margin-right: 0;
+      //  &:hover,
+      //  &:focus{
+      //    background-color: #bf1c0e;
+      //  }
+      //}
+    }
+  }
+}
+
+.section__heading {
+  color: #000000;
+  font-family: $secondary-font;
+
+}
+
+.section__header {
+  position: relative;
+  display: inline-block;
+  padding-right: 65px;
+
+  &:after {
+    position: absolute;
+    content: '';
+    display: block;
+    background-color: #000000;
+    height: 3px;
+    width: 100vw;
+    top: 60%;
+    //top: 50%;
+    //transform: translateY(50%);
+    left: 100%;
+  }
+}
+
+.dynamic-content {
+  p {
+    margin-bottom: 30px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

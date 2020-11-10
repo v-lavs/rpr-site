@@ -1,0 +1,220 @@
+.section-how-take {
+  padding-top: 80px;
+  padding-bottom: 135px;
+
+  .container {
+    overflow: hidden;
+  }
+
+  .section__header {
+    margin-bottom: 120px;
+  }
+
+  .section__content {
+    display: flex;
+    flex-wrap: wrap;
+
+    counter-reset: step;
+  }
+
+  .step {
+    width: 50%;
+
+    &__header {
+      position: relative;
+      padding-left: 100px;
+      margin-bottom: 80px;
+
+      &:before {
+        counter-increment: step;
+        content: counter(step) " ";
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $bordo;
+        width: 72px;
+        height: 72px;
+        border-radius: 50%;
+        left: 0;
+        top: -7px;
+        font-family: $secondary-font;
+        line-height: 1;
+        font-size: 44px;
+        font-weight: 700;
+        z-index: 2;
+        color: $white;
+      }
+    }
+
+    .heading {
+      margin-bottom: 6px;
+      font-family: $secondary-font;
+    }
+
+    .sub-title {
+      width: 65%;
+    }
+
+    &__content {
+      display: flex;
+    }
+  }
+
+  .step_1 {
+    width: 100%;
+
+    .step__content {
+      justify-content: space-between;
+      padding-bottom: 180px;
+    }
+  }
+
+  .step_2,
+  .step_3 {
+    .step__content {
+      padding-left: 100px;
+    }
+
+    .card {
+      width: 50%;
+      max-width: 238px;
+      margin-right: 33px;
+      padding: 5px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .card {
+    text-align: center;
+
+    .bg-thumb {
+      background-repeat: no-repeat;
+      background-position: center center;
+      -webkit-background-size: cover;
+      background-size: cover;
+      width: 100%;
+      height: 228px;
+    }
+
+    .text-bold {
+      font-weight: 600;
+      margin-bottom: 7px;
+    }
+
+    &__text {
+      color: $grey;
+    }
+  }
+
+  .card-dosage {
+    position: relative;
+    width: 25.25%;
+    padding: 15px 28px;
+    border: 1px solid transparent;
+    transition: .35s;
+    border-top: none;
+    text-align: left;
+
+    &:before {
+      position: absolute;
+      content: '';
+      display: block;
+      left: -1px;
+      right: -1px;
+      top: -15px;
+      height: 15px;
+      opacity: 0;
+      transition: .35s;
+    }
+
+    &:hover,
+    &:focus {
+      background-color: $white;
+    }
+
+    &:nth-child(1):before {
+      background-image: linear-gradient(to right, #ffdb45, #ffc400);
+    }
+
+    &:nth-child(2):before {
+      background-image: linear-gradient(to right, #2da7f6, #0866a3);
+    }
+
+    &:nth-child(3):before {
+      background-image: linear-gradient(to right, #fd5446, #bf1c0e);
+    }
+
+    &:hover:before {
+      opacity: 1;
+    }
+
+    &:nth-child(1) {
+      .card-dosage__header,
+      .card-dosage__title {
+        color: $warning;
+      }
+
+      &:hover {
+        border-color: #ffdb45;
+      }
+    }
+
+    &:nth-child(2) {
+      .card-dosage__header,
+      .card-dosage__title {
+        color: $blue;
+      }
+
+      &:hover {
+        border-color: #2da7f6;
+      }
+    }
+
+    &:nth-child(3) {
+      .card-dosage__header,
+      .card-dosage__title {
+        color: $bordo;
+      }
+
+      &:hover {
+        border-color: #fd5446;
+      }
+    }
+
+    &__header,
+    &__title {
+      font-family: $secondary-font;
+      font-size: 42px;
+      font-weight: 900;
+    }
+
+    &__title {
+      margin-bottom: 22px;
+    }
+
+    &__header {
+      margin-bottom: 20px;
+    }
+
+    .bg-thumb {
+      min-height: 486px;
+      margin-bottom: 15px;
+    }
+  }
+
+  .aside {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 120px;
+  }
+
+  .section__text {
+    width: 50%;
+    padding-right: 20px;
+  }
+}

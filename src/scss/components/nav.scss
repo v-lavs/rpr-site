@@ -1,0 +1,25 @@
+.menu {
+  display: flex;
+  color: $dark;
+
+  &__item {
+    font-size: 14px;
+    font-weight: 400;
+    font-family: $helper-font;
+    margin-left: 11px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+
+  &__link {
+    display: inline-block;
+    transition: .35s;
+
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+    }
+  }
+}

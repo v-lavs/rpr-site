@@ -1,0 +1,53 @@
+.section-about {
+  padding-top: 160px;
+  padding-bottom: 182px;
+  color: $grey;
+
+  .container {
+    display: flex;
+  }
+
+  .part-left {
+    width: 44%;
+
+    .section__text {
+      margin-bottom: 18px;
+      max-width: 530px;
+      font-weight: 600;
+    }
+  }
+
+  .heading {
+    margin-bottom: 30px;
+  }
+
+  .part-right {
+    width: 56%;
+  }
+
+  .description {
+    padding-top: 5px;
+    &__item {
+      position: relative;
+      padding: 13px 60px 20px 50px;
+      border: 1px solid #707070;
+      background-color: #f4f4f4;
+      margin-bottom: 40px;
+      min-height: 125px;
+      &:last-child{
+        margin-bottom: 0;
+      }
+      &:before{
+        position: absolute;
+        content: '';
+        z-index: 2;
+        display: block;
+        width: 12px;
+        top: -4px;
+        bottom: -4px;
+        left: 0;
+        background-color: #000000;
+      }
+    }
+  }
+}
