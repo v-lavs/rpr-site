@@ -187,11 +187,17 @@ body {
 
 .page {
   padding-top: 160px;
+  color: #5e5e5e;
 }
 
 .page__sub-title {
   font-family: "Source Code Pro", monospace;
   font-weight: 700;
+}
+
+.page__title {
+  width: 70%;
+  margin-bottom: 40px;
 }
 
 .page__title,
@@ -244,6 +250,50 @@ body {
 
 .dynamic-content p:last-child {
   margin-bottom: 0;
+}
+
+.dynamic-content h2 {
+  font-family: "Source Code Pro", monospace;
+  font-size: 44px;
+  font-weight: 700;
+  color: #800000;
+  margin-bottom: 40px;
+  margin-top: 55px;
+}
+
+.dynamic-content ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.dynamic-content ul li {
+  position: relative;
+  width: 45%;
+  padding-left: 52px;
+  padding-right: 10%;
+  margin-bottom: 56px;
+}
+
+.dynamic-content ul li:before {
+  position: absolute;
+  content: '';
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background-image: url(../assets/img/svg/marker.svg);
+  background-repeat: no-repeat;
+  -webkit-background-size: contain;
+  background-size: contain;
+  background-position: center center;
+  width: 44px;
+  height: 27px;
+}
+
+article .heading {
+  font-family: "Source Code Pro", monospace;
 }
 
 .heading {
@@ -1079,18 +1129,10 @@ article .section__heading {
   margin-bottom: 12px;
 }
 
-.page-for-whom .page__title {
-  margin-bottom: 40px;
-}
-
-.page-for-whom .heading {
-  margin-bottom: 56px;
-}
-
-.page-for-whom .dynamic-content {
-  margin-bottom: 65px;
-}
-
 .page-for-whom article {
   margin-bottom: 125px;
+}
+
+.page-about article {
+  margin-bottom: 200px;
 }

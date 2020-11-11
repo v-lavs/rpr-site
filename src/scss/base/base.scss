@@ -68,35 +68,23 @@ body {
 
     .btn {
       margin-right: 5px;
-      //&:hover,
-      //&:focus{
-      //  background-color: #0090ff;
-      //}
-      //&:first-child{
-      //  &:hover,
-      //  &:focus{
-      //    background-color: #f49600;
-      //  }
-      //}
-      //&:last-child{
-      //  margin-right: 0;
-      //  &:hover,
-      //  &:focus{
-      //    background-color: #bf1c0e;
-      //  }
-      //}
     }
   }
 }
 
 .page {
   padding-top: 160px;
-
+  color: $grey;
 }
 
 .page__sub-title {
   font-family: $secondary-font;
   font-weight: 700;
+}
+
+.page__title {
+  width: 70%;
+  margin-bottom: 40px;
 }
 
 .page__title,
@@ -151,4 +139,44 @@ body {
       margin-bottom: 0;
     }
   }
+
+  h2{
+    font-family: $secondary-font;
+    font-size: 44px;
+    font-weight: 700;
+    color: #800000;
+    margin-bottom: 40px;
+    margin-top: 55px;
+  }
+  ul{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    li{
+      position: relative;
+      width: 45%;
+      padding-left: 52px;
+      padding-right: 10%;
+      margin-bottom: 56px;
+      &:before{
+        position: absolute;
+        content: '';
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        background-image: url(../assets/img/svg/marker.svg);
+        background-repeat: no-repeat;
+        -webkit-background-size: contain;
+        background-size: contain;
+        background-position: center center;
+        width: 44px;
+        height: 27px;
+      }
+    }
+  }
+}
+article .heading{
+  font-family: $secondary-font;
 }
