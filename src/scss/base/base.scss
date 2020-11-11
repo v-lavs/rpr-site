@@ -123,12 +123,39 @@ body {
 }
 
 .upload-pdf {
-  width: 76px;
-  height: 76px;
-  padding: 3px 5px;
-  background-color: $red;
-  display: inline-block;
-  text-align: center;
+  color: #800000;
+  font-family: $secondary-font;
+  font-size: 44px;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+
+  .wrap-svg {
+    width: 76px;
+    height: 76px;
+    padding: 4px 5px;
+    background-color: $white;
+    display: inline-block;
+    text-align: center;
+    transition: background-color .4s;
+    margin-right: 18px;
+
+    .icon-svg {
+      width: auto;
+      transition: .4s;
+    }
+  }
+
+  &:hover,
+  &:focus {
+    .wrap-svg {
+      background-color: #ff0000;
+
+      .icon-svg path {
+        fill: #ffffff;
+      }
+    }
+  }
 }
 
 .dynamic-content {
@@ -140,7 +167,7 @@ body {
     }
   }
 
-  h2{
+  h2 {
     font-family: $secondary-font;
     font-size: 44px;
     font-weight: 700;
@@ -148,19 +175,22 @@ body {
     margin-bottom: 40px;
     margin-top: 55px;
   }
-  ul{
+
+  ul {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 30px;
-    li{
+
+    li {
       position: relative;
       width: 45%;
       padding-left: 52px;
       padding-right: 10%;
       margin-bottom: 56px;
-      &:before{
+
+      &:before {
         position: absolute;
         content: '';
         left: 0;
@@ -177,6 +207,7 @@ body {
     }
   }
 }
-article .heading{
+
+article .heading {
   font-family: $secondary-font;
 }

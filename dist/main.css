@@ -236,12 +236,38 @@ body {
 }
 
 .upload-pdf {
+  color: #800000;
+  font-family: "Source Code Pro", monospace;
+  font-size: 44px;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+}
+
+.upload-pdf .wrap-svg {
   width: 76px;
   height: 76px;
-  padding: 3px 5px;
-  background-color: #ff0000;
+  padding: 4px 5px;
+  background-color: #fff;
   display: inline-block;
   text-align: center;
+  transition: background-color .4s;
+  margin-right: 18px;
+}
+
+.upload-pdf .wrap-svg .icon-svg {
+  width: auto;
+  transition: .4s;
+}
+
+.upload-pdf:hover .wrap-svg,
+.upload-pdf:focus .wrap-svg {
+  background-color: #ff0000;
+}
+
+.upload-pdf:hover .wrap-svg .icon-svg path,
+.upload-pdf:focus .wrap-svg .icon-svg path {
+  fill: #ffffff;
 }
 
 .dynamic-content p {
@@ -1076,6 +1102,10 @@ article .heading {
 
 .page-instruction .application.bg-application_danger:before {
   background-color: #e42313;
+}
+
+.page-instruction .dynamic-content {
+  margin-bottom: 15%;
 }
 
 .section-hero .page__title {
