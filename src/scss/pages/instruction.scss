@@ -3,6 +3,7 @@
     padding-top: 13px;
     padding-bottom: 20px;
     color: $white;
+    font-weight: 700;
     &.bg-application{
       position: relative;
       &:before{
@@ -18,13 +19,17 @@
     &.bg-application_warninng:before{
       background-color: $warning;
     }
+    &.bg-application_blue:before{
+      background-color: #0070ba;
+    }
+    &.bg-application_danger:before{
+      background-color: #e42313;
+    }
   }
 }
 
 
 .section-hero {
-  padding-top: 160px;
-
   .page__title {
     margin-bottom: 28px;
   }
@@ -50,7 +55,7 @@
     }
 
     &.active_blue {
-      background-color: $blue;
+      background-color: #0090ff;
       color: $white;
     }
 

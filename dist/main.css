@@ -350,6 +350,7 @@ article .heading {
 .btn_small:first-child:hover,
 .btn_small:first-child:focus {
   background-color: #f49600;
+  color: #fff;
 }
 
 .btn_small:last-child {
@@ -359,6 +360,7 @@ article .heading {
 .btn_small:last-child:hover,
 .btn_small:last-child:focus {
   background-color: #bf1c0e;
+  color: #fff;
 }
 
 .btn_play {
@@ -1047,6 +1049,7 @@ article .heading {
   padding-top: 13px;
   padding-bottom: 20px;
   color: #fff;
+  font-weight: 700;
 }
 
 .page-instruction .application.bg-application {
@@ -1067,8 +1070,12 @@ article .heading {
   background-color: #f49600;
 }
 
-.section-hero {
-  padding-top: 160px;
+.page-instruction .application.bg-application_blue:before {
+  background-color: #0070ba;
+}
+
+.page-instruction .application.bg-application_danger:before {
+  background-color: #e42313;
 }
 
 .section-hero .page__title {
@@ -1097,7 +1104,7 @@ article .heading {
 }
 
 .section-hero .btn_small.active_blue {
-  background-color: #0070ba;
+  background-color: #0090ff;
   color: #fff;
 }
 

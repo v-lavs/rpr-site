@@ -5,10 +5,12 @@
   .top-content {
     padding-top: 160px;
     padding-bottom: 50px;
-    .section__text{
+
+    .section__text {
       max-width: 420px;
       margin-bottom: 54px;
     }
+
     .container {
       display: flex;
     }
@@ -29,7 +31,8 @@
   .part-right {
     padding-right: 52px;
     text-align: right;
-    .img_intro{
+
+    .img_intro {
       vertical-align: top;
     }
   }
@@ -61,40 +64,47 @@
     }
 
   }
-  .video-block{
+
+  .video-block {
     padding-top: 125px;
-    .section__text{
+
+    .section__text {
       width: 50%;
       text-align: right;
-     padding-right: 110px;
+      padding-right: 110px;
       margin-bottom: 65px;
     }
-    video{
+
+    video {
       object-fit: inherit;
       display: block;
       width: 100%;
       height: auto;
     }
   }
-  .wrap-thumb{
+
+  .wrap-thumb {
     position: relative;
     border: 1px solid #707070;
     background-color: #ffffff;
     padding: 40px 70px;
     margin-bottom: 28px;
   }
-  .btn_play{
+
+  .btn_play {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
   }
-  .aside{
+
+  .aside {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     padding-bottom: 80px;
-    .know-pharmacy{
-           margin-right: 5px;
-         }
+
+    .know-pharmacy {
+      margin-right: 5px;
+    }
   }
 }
