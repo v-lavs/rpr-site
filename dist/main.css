@@ -185,6 +185,15 @@ body {
   margin-right: 5px;
 }
 
+.page {
+  padding-top: 160px;
+}
+
+.page__sub-title {
+  font-family: "Source Code Pro", monospace;
+  font-weight: 700;
+}
+
 .page__title,
 .section__heading {
   color: #000000;
@@ -771,25 +780,28 @@ body {
   margin-bottom: 182px;
 }
 
-.section-producer .bg-section {
+.wrap-know-pharmacy {
   display: flex;
-  align-items: flex-end;
-  background-repeat: no-repeat;
-  background-position: right bottom 45%;
-  -webkit-background-size: 77%;
-  background-size: 77%;
-  min-height: 964px;
+  justify-content: flex-end;
+}
+
+.thumb-rapira-cough {
+  position: relative;
+  padding-top: 90px;
+  padding-bottom: 70px;
+  display: flex;
+  justify-content: flex-end;
   padding-left: 38px;
   margin-bottom: 150px;
 }
 
-.section-producer .bg-section .img {
-  object-fit: cover;
+.thumb-rapira-cough .img-pack {
+  position: absolute;
+  bottom: 0;
 }
 
-.section-producer .section__footer {
-  display: flex;
-  justify-content: flex-end;
+.thumb-rapira-cough .img {
+  object-fit: cover;
 }
 
 .wrapper {
@@ -1057,4 +1069,28 @@ article .section__heading {
   font-size: 44px;
   font-weight: 700;
   margin-bottom: 38px;
+}
+
+.page-404 {
+  padding-bottom: 210px;
+}
+
+.page-404 .page__title {
+  margin-bottom: 12px;
+}
+
+.page-for-whom .page__title {
+  margin-bottom: 40px;
+}
+
+.page-for-whom .heading {
+  margin-bottom: 56px;
+}
+
+.page-for-whom .dynamic-content {
+  margin-bottom: 65px;
+}
+
+.page-for-whom article {
+  margin-bottom: 125px;
 }

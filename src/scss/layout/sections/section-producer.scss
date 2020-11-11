@@ -29,22 +29,26 @@
   .section__content{
     margin-bottom: 182px;
   }
-  .bg-section{
-    display: flex;
-    align-items: flex-end;
-    background-repeat: no-repeat;
-    background-position: right bottom 45%;
-    -webkit-background-size: 77%;
-    background-size: 77%;
-    min-height: 964px;
-    padding-left: 38px;
-    margin-bottom: 150px;
-    .img{
-      object-fit: cover;
-    }
+}
+
+.wrap-know-pharmacy{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.thumb-rapira-cough{
+  position: relative;
+  padding-top: 90px;
+  padding-bottom: 70px;
+  display: flex;
+  justify-content: flex-end;
+  padding-left: 38px;
+  margin-bottom: 150px;
+  .img-pack{
+    position: absolute;
+    bottom: 0;
   }
-  .section__footer{
-    display: flex;
-    justify-content: flex-end;
+  .img{
+    object-fit: cover;
   }
 }

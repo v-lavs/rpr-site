@@ -22,7 +22,6 @@ body {
 }
 
 
-
 .link {
   color: #202020;
   font-family: $helper-font;
@@ -90,6 +89,16 @@ body {
   }
 }
 
+.page {
+  padding-top: 160px;
+
+}
+
+.page__sub-title {
+  font-family: $secondary-font;
+  font-weight: 700;
+}
+
 .page__title,
 .section__heading {
   color: #000000;
@@ -112,6 +121,7 @@ body {
     left: 100%;
   }
 }
+
 .color_warning {
   color: #f49600;
 }
@@ -124,7 +134,7 @@ body {
   color: #800000;
 }
 
-.upload-pdf{
+.upload-pdf {
   width: 76px;
   height: 76px;
   padding: 3px 5px;
@@ -132,6 +142,7 @@ body {
   display: inline-block;
   text-align: center;
 }
+
 .dynamic-content {
   p {
     margin-bottom: 30px;
