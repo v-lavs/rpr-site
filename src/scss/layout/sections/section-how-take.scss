@@ -259,9 +259,10 @@
       margin-bottom: 80px;
     }
     .step_1 {
-      .step__content{
+      .step__content {
         justify-content: space-around;
       }
+
       .section__text {
         max-width: 100%;
         padding-bottom: 60px;
@@ -291,9 +292,11 @@
       width: 50%;
       flex-basis: 385px;
       margin-bottom: 40px;
-      &:last-child{
+
+      &:last-child {
         margin-bottom: 0;
       }
+
       .text-bold {
         font-size: 22px;
       }
@@ -319,9 +322,9 @@
     }
   }
 
-  @include respond-to($md){
+  @include respond-to($md) {
     padding-top: 40px;
-    .card-dosage{
+    .card-dosage {
       margin-bottom: 20%;
     }
     .step__header:before {
@@ -329,6 +332,36 @@
     }
     .aside {
       margin-bottom: 16%;
+    }
+  }
+  @include respond-to($sm) {
+    .section__header {
+      margin-bottom: 16.5%;
+    }
+    .step_1 .section__text {
+      padding-bottom: 13px;
+    }
+    .step__header {
+      padding-left: 0;
+    }
+
+    .step .heading {
+      padding-left: 100px;
+      padding-bottom: 0;
+      margin-bottom: 50px;
+    }
+    .step_1 .heading {
+      padding-bottom: 25px;
+    }
+    .card {
+      width: 40%;
+      .bg-thumb{
+        min-height: 155px;
+        margin-bottom: 10px;
+      }
+    }
+    .step .step__content {
+      padding-left: 20px;
     }
   }
 }

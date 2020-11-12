@@ -110,3 +110,12 @@
     font-size: 4px;
   }
 }
+
+@include respond-to($sm) {
+  .btn_small {
+    font-size: 14px;
+  }
+  .btn_play {
+    font-size: 2px;
+  }
+}

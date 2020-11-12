@@ -85,4 +85,18 @@
       padding-right: 10px;
     }
   }
+  @include respond-to($sm){
+    .section__text {
+      font-size: 16px;
+    }
+    .heading {
+      margin-bottom: 5px;
+    }
+    .part-right{
+      .description__item{
+        padding: 5px 16px 5px 28px;
+        min-height: 100px;
+      }
+    }
+  }
 }

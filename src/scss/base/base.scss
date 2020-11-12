@@ -2,7 +2,7 @@
   max-width: 1920px;
   width: 100%;
   margin: 0 auto;
- }
+}
 
 body {
   -webkit-font-smoothing: antialiased;
@@ -15,6 +15,9 @@ body {
   }
   @include respond-to($md) {
     font-size: 16px;
+  }
+  @include respond-to($sm) {
+    font-size: 14px;
   }
 }
 
@@ -93,6 +96,23 @@ body {
       font-size: 44px;
     }
   }
+  @include respond-to($sm) {
+    flex-wrap: wrap;
+    flex-shrink: 1;
+    padding-right: 0;
+    .wrap-btn,
+    .know-pharmacy__content {
+      width: 100%;
+    }
+    .know-pharmacy__content {
+      padding-left: 0;
+      padding-top: 10px;
+
+      span {
+        font-size: 14px;
+      }
+    }
+  }
 }
 
 .page {
@@ -115,9 +135,11 @@ body {
   color: #000000;
   font-family: $secondary-font;
 }
-.page__title_xl{
+
+.page__title_xl {
   font-size: 70px;
 }
+
 .section__header {
   position: relative;
   display: inline-block;
@@ -237,14 +259,20 @@ body {
       }
     }
   }
-  @include respond-to($lg){
-    h2{
+
+  @include respond-to($lg) {
+    h2 {
       font-size: 36px;
     }
   }
-  @include respond-to($md){
-    p{
+  @include respond-to($md) {
+    p {
       margin-bottom: 23px;
+    }
+  }
+  @include respond-to($sm) {
+    p {
+      margin-bottom: 18px;
     }
   }
 }
@@ -269,8 +297,9 @@ body {
   }
 
   .img {
-    object-fit: cover;
+    //object-fit: cover;
   }
+
   @include respond-to($xxl) {
     .img-rapira {
       width: 85%;
@@ -294,6 +323,12 @@ body {
     }
     .dynamic-content {
       margin-bottom: 20px;
+    }
+  }
+  @include respond-to($sm){
+    margin-bottom: 44px;
+    .img-rapira{
+      max-width: 100%;
     }
   }
 }

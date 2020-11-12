@@ -88,6 +88,7 @@
     display: block;
     width: 100%;
     max-width: 100%;
+    height: 100%;
 
   }
 
@@ -136,6 +137,21 @@
     }
     .footer__logo {
       max-width: 320px;
+    }
+  }
+  @include  respond-to($sm){
+    .text-left{
+      padding-bottom: 0;
+    }
+    .part-right{
+      font-size: 16px;
+      padding-bottom: 40px;
+      p{
+        margin-bottom: 50px;
+      }
+    }
+    .footer__logo {
+      max-width: 274px;
     }
   }
 }

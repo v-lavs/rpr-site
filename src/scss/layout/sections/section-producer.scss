@@ -47,22 +47,24 @@
       width: 100%;
       margin-bottom: 40px;
     }
-    //.img-rapira {
-    //  position: relative;
-    //  bottom: -50px;
-    //}
-    //.thumb-rapira-cough {
-    //  overflow: hidden;
-    //  padding-top: 40px;
-    //}
+
   }
   @include respond-to($md) {
-    //.img-rapira {
-    //  bottom: -35px;
-    //  max-width: 85%;
-    //}
-    .dynamic-content {
+        .dynamic-content {
       margin-bottom: 20px;
+    }
+  }
+  @include respond-to($sm){
+    padding-top: 40px;
+    .section__header {
+      margin-bottom: 25px;
+      padding-right: 15px;
+    }
+    .producer-logo {
+      max-width: 90px;
+    }
+    .section__content {
+      margin-bottom: 3%;
     }
   }
 }
