@@ -186,5 +186,11 @@
       }
     }
   }
+
+  @include respond-to($sm) {
+    .part-right .img_intro {
+      width: 100vw;
+    }
+  }
 }
 

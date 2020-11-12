@@ -209,6 +209,10 @@ body {
   font-family: "Source Code Pro", monospace;
 }
 
+.page__title_xl {
+  font-size: 70px;
+}
+
 .section__header {
   position: relative;
   display: inline-block;
@@ -429,8 +433,9 @@ body {
 
 .btn_play {
   position: absolute;
-  width: 177px;
-  height: 177px;
+  font-size: 10px;
+  width: 17.7em;
+  height: 17.7em;
   border-radius: 50%;
   background-color: #ff0000;
   border: none;
@@ -446,9 +451,9 @@ body {
   width: 0;
   height: 0;
   border-style: solid;
-  border-width: 32px 0 32px 55px;
+  border-width: 3.2em 0 3.2em 5.5em;
   border-color: transparent transparent transparent #fff;
-  margin: 0 0 0 8px;
+  margin: 0 0 0 .8em;
 }
 
 .menu {
@@ -923,8 +928,26 @@ body {
   z-index: 999;
 }
 
+.header.header_active {
+  transition: hight .45s;
+}
+
+.header.header_active .container {
+  position: relative;
+  padding-top: 12px;
+  z-index: 999;
+}
+
+.header.header_active .menu {
+  color: rgba(255, 255, 255, 0.8);
+}
+
 .header.header_active .nav__lang {
   opacity: 0;
+}
+
+.header.header_active:before {
+  transform: skew(0deg);
 }
 
 .header:before {
@@ -995,6 +1018,43 @@ body {
 .header .nav__link:hover,
 .header .nav__link:focus {
   text-decoration: underline;
+}
+
+.header .btn-burger {
+  border: none;
+  background-color: transparent;
+  display: none;
+  padding: 5px;
+  width: 31px;
+  height: 27px;
+}
+
+.header .btn-burger .line {
+  display: block;
+  width: 21px;
+  height: 1px;
+  margin-bottom: 7px;
+  background-color: #707070;
+}
+
+.header .btn-burger .line:last-child {
+  margin-bottom: 0;
+}
+
+.header .btn-close {
+  position: absolute;
+  left: 26px;
+  top: 26px;
+  border: none;
+  background-color: transparent;
+  display: none;
+  background-image: url(../assets/img/svg/close.svg);
+  width: 19px;
+  height: 19px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  background-size: cover;
 }
 
 .backdrop {
@@ -1183,6 +1243,10 @@ body {
     font-size: 18px;
   }
 
+  .thumb-rapira-cough .img-rapira {
+    width: 85%;
+  }
+
   .heading_big {
     font-size: 100px;
   }
@@ -1226,6 +1290,16 @@ body {
     margin-bottom: 85px;
   }
 
+  .thumb-rapira-cough .img-rapira {
+    position: relative;
+    bottom: -50px;
+  }
+
+  .thumb-rapira-cough .thumb-rapira-cough {
+    overflow: hidden;
+    padding-top: 40px;
+  }
+
   .heading_big {
     font-size: 80px;
   }
@@ -1243,13 +1317,7 @@ body {
   }
 
   .btn_play {
-    width: 110px;
-    height: 110px;
-  }
-
-  .btn_play:before {
-    border-width: 19px 0 19px 33px;
-    margin: 0 0 0 4px;
+    font-size: 7px;
   }
 
   .section-intro .aside {
@@ -1291,6 +1359,10 @@ body {
 @media only screen and (max-width: 1180px) {
   .know-pharmacy .cost {
     font-size: 44px;
+  }
+
+  .dynamic-content h2 {
+    font-size: 36px;
   }
 
   .btn_main {
@@ -1395,7 +1467,7 @@ body {
   .section-how-take .card-dosage {
     font-size: 16px;
     width: 50%;
-    flex-basis: 410px;
+    flex-basis: 385px;
     margin-bottom: 40px;
   }
 
@@ -1471,26 +1543,12 @@ body {
     margin-bottom: 40px;
   }
 
-  .section-producer .img-rapira {
-    position: relative;
-    bottom: -50px;
-  }
-
-  .section-producer .thumb-rapira-cough {
-    overflow: hidden;
-    padding-top: 40px;
-  }
-
   .container {
-    max-width: 920px;
+    max-width: 800px;
   }
 
   .header:before {
     top: -10px;
-  }
-
-  .header .container {
-    max-width: 100%;
   }
 
   .header .left-bar {
@@ -1532,6 +1590,15 @@ body {
     margin-bottom: 23px;
   }
 
+  .thumb-rapira-cough .img-rapira {
+    bottom: -35px;
+    max-width: 85%;
+  }
+
+  .thumb-rapira-cough .dynamic-content {
+    margin-bottom: 20px;
+  }
+
   .heading_xl {
     font-size: 70px;
   }
@@ -1541,13 +1608,7 @@ body {
   }
 
   .btn_play {
-    width: 67px;
-    height: 67px;
-  }
-
-  .btn_play:before {
-    border-width: 12.5px 0 12.5px 22px;
-    margin: 0 0 0 4px;
+    font-size: 4px;
   }
 
   .section-intro .part-right .img_intro {
@@ -1606,17 +1667,16 @@ body {
     padding-right: 10px;
   }
 
-  .section-producer .img-rapira {
-    bottom: -35px;
-    max-width: 85%;
-  }
-
   .section-producer .dynamic-content {
     margin-bottom: 20px;
   }
 
   .container {
     max-width: 670px;
+  }
+
+  .header .container {
+    max-width: 100%;
   }
 
   .footer .container {
@@ -1632,6 +1692,7 @@ body {
     width: 100%;
     order: -1;
     font-size: 22px;
+    max-width: 490px;
   }
 
   .footer .part-right:before {
@@ -1657,7 +1718,88 @@ body {
 }
 
 @media only screen and (max-width: 760px) {
+  .section-intro .part-right .img_intro {
+    width: 100vw;
+  }
+
   .container {
     max-width: 420px;
+  }
+
+  .header .header.header_active .container {
+    padding-top: 6px;
+  }
+
+  .header .header.header_active .menu {
+    color: #202020;
+  }
+
+  .header .header.header_active .nav__lang {
+    color: rgba(255, 255, 255, 0.8);
+    opacity: 1;
+  }
+
+  .header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 45px;
+  }
+
+  .header .left-bar {
+    position: initial;
+  }
+
+  .header .btn-close,
+  .header .btn-burger {
+    display: block;
+  }
+
+  .header .header__nav {
+    padding: 105px 26px 40px;
+    position: fixed;
+    left: -35px;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    max-width: 320px;
+    background-color: #fff;
+    max-height: 100%;
+    overflow-y: auto;
+    text-align: left;
+    transition: transform .5s;
+    transform: translateX(-100%);
+    z-index: 999;
+  }
+
+  .header .header__nav.open {
+    transform: translateX(0);
+  }
+
+  .header .header__nav .menu {
+    flex-direction: column;
+  }
+
+  .header .header__nav .menu__item {
+    margin-bottom: 28px;
+    margin-left: 0;
+  }
+
+  .header .header__nav .menu__item:last-child {
+    margin-bottom: 0;
+  }
+
+  .header .header__logo {
+    position: absolute;
+    top: -3px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .header .nav__lang {
+    position: inherit !important;
+    margin-left: 30px;
   }
 }

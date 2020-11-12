@@ -115,7 +115,9 @@ body {
   color: #000000;
   font-family: $secondary-font;
 }
-
+.page__title_xl{
+  font-size: 70px;
+}
 .section__header {
   position: relative;
   display: inline-block;
@@ -235,6 +237,11 @@ body {
       }
     }
   }
+  @include respond-to($lg){
+    h2{
+      font-size: 36px;
+    }
+  }
   @include respond-to($md){
     p{
       margin-bottom: 23px;
@@ -264,7 +271,29 @@ body {
   .img {
     object-fit: cover;
   }
+  @include respond-to($xxl) {
+    .img-rapira {
+      width: 85%;
+    }
+  }
   @include respond-to($xl) {
     margin-bottom: 85px;
+    .img-rapira {
+      position: relative;
+      bottom: -50px;
+    }
+    .thumb-rapira-cough {
+      overflow: hidden;
+      padding-top: 40px;
+    }
+  }
+  @include respond-to($md) {
+    .img-rapira {
+      bottom: -35px;
+      max-width: 85%;
+    }
+    .dynamic-content {
+      margin-bottom: 20px;
+    }
   }
 }

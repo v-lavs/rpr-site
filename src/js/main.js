@@ -12,7 +12,7 @@ $(document).ready(function () {
     //MOBILE MENU
     var nav = $('.header__nav');
 
-    $('.burger').click(function (e) {
+    $('.btn-burger').click(function (e) {
         e.preventDefault();
         nav.addClass('open');
         jQuery('.backdrop').fadeIn();
