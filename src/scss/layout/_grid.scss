@@ -24,4 +24,7 @@
   @include respond-to($sm){
     max-width: 420px;
   }
+  @include respond-to($xs){
+    max-width: 300px;
+  }
 }

@@ -337,31 +337,90 @@
   @include respond-to($sm) {
     .section__header {
       margin-bottom: 16.5%;
+      padding-right: 15px;
     }
     .step_1 .section__text {
       padding-bottom: 13px;
     }
     .step__header {
       padding-left: 0;
-    }
 
+      .section__text {
+        padding-right: 0;
+      }
+    }
+    .step .step__content {
+      padding-left: 20px;
+    }
     .step .heading {
       padding-left: 100px;
       padding-bottom: 0;
       margin-bottom: 50px;
     }
-    .step_1 .heading {
-      padding-bottom: 25px;
+    .step_1 {
+      .step__content{
+        padding-left: 0;
+      }
+      .heading {
+        padding-bottom: 25px;
+      }
+    }
+    .card-dosage__header,
+    .card-dosage__title{
+      font-size: 32px;
     }
     .card {
       width: 40%;
-      .bg-thumb{
+
+      .bg-thumb {
         min-height: 155px;
         margin-bottom: 10px;
       }
     }
-    .step .step__content {
-      padding-left: 20px;
+
+  }
+  @include respond-to($xs) {
+    .section__header {
+      max-width: 235px;
+
+      &:after {
+        top: 75%;
+      }
+    }
+    .card {
+      width: 100%;
+      margin-bottom: 50px;
+    }
+    .card-dosage {
+      border: none;
+      padding: 0;
+      flex-basis: 184px;
+      margin-bottom: 8%;
+      &:nth-child(n) {
+        .card-dosage__header{
+          color: #5e5e5e;
+        }
+      }
+
+      &__header {
+        background: red;
+        font-family: $main-font;
+        font-size: 24px;
+        font-weight: 300;
+        line-height: 1;
+        padding: 13px 30px;
+
+      }
+
+      &:before {
+        display: none;
+      }
+
+      .bg-thumb,
+      &__title,
+      .card__text {
+        display: none;
+      }
     }
   }
 }

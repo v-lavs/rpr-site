@@ -67,5 +67,14 @@
       margin-bottom: 3%;
     }
   }
+  @include respond-to($xs){
+    padding-top: 0;
+    .section__header {
+      max-width: 235px;
+      &:after {
+        top: 75%;
+      }
+    }
+  }
 }
 

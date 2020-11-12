@@ -188,6 +188,11 @@ body {
   margin-right: 5px;
 }
 
+.know-pharmacy .wrap-know-pharmacy {
+  display: flex;
+  justify-content: flex-end;
+}
+
 .page {
   padding-top: 160px;
   color: #5e5e5e;
@@ -329,11 +334,6 @@ body {
   background-position: center center;
   width: 44px;
   height: 27px;
-}
-
-.wrap-know-pharmacy {
-  display: flex;
-  justify-content: flex-end;
 }
 
 .thumb-rapira-cough {
@@ -925,12 +925,12 @@ body {
 }
 
 .header.header_active {
-  transition: hight .45s;
+  transition: padding-top .45s, transform .5s ease-in;
 }
 
 .header.header_active .container {
   position: relative;
-  padding-top: 12px;
+  padding-top: 18px;
   z-index: 999;
 }
 
@@ -1544,6 +1544,10 @@ body {
     max-width: 800px;
   }
 
+  .header.header_active .container {
+    padding-top: 12px;
+  }
+
   .header:before {
     top: -10px;
   }
@@ -1581,6 +1585,10 @@ body {
 @media only screen and (max-width: 940px) {
   body {
     font-size: 16px;
+  }
+
+  .know-pharmacy {
+    padding-right: 0;
   }
 
   .dynamic-content p {
@@ -1722,7 +1730,7 @@ body {
   .know-pharmacy {
     flex-wrap: wrap;
     flex-shrink: 1;
-    padding-right: 0;
+    text-align: center;
   }
 
   .know-pharmacy .wrap-btn,
@@ -1737,6 +1745,10 @@ body {
 
   .know-pharmacy .know-pharmacy__content span {
     font-size: 14px;
+  }
+
+  .know-pharmacy .instructions {
+    justify-content: center;
   }
 
   .dynamic-content p {
@@ -1768,7 +1780,7 @@ body {
   }
 
   .btn_play {
-    font-size: 2px;
+    font-size: 1.65px;
   }
 
   .section-intro .part-right .img_intro {
@@ -1799,6 +1811,7 @@ body {
 
   .section-how-take .section__header {
     margin-bottom: 16.5%;
+    padding-right: 15px;
   }
 
   .section-how-take .step_1 .section__text {
@@ -1809,14 +1822,31 @@ body {
     padding-left: 0;
   }
 
+  .section-how-take .step__header .section__text {
+    padding-right: 0;
+  }
+
+  .section-how-take .step .step__content {
+    padding-left: 20px;
+  }
+
   .section-how-take .step .heading {
     padding-left: 100px;
     padding-bottom: 0;
     margin-bottom: 50px;
   }
 
+  .section-how-take .step_1 .step__content {
+    padding-left: 0;
+  }
+
   .section-how-take .step_1 .heading {
     padding-bottom: 25px;
+  }
+
+  .section-how-take .card-dosage__header,
+  .section-how-take .card-dosage__title {
+    font-size: 32px;
   }
 
   .section-how-take .card {
@@ -1826,10 +1856,6 @@ body {
   .section-how-take .card .bg-thumb {
     min-height: 155px;
     margin-bottom: 10px;
-  }
-
-  .section-how-take .step .step__content {
-    padding-left: 20px;
   }
 
   .section-about .section__text {
@@ -1866,17 +1892,21 @@ body {
     max-width: 420px;
   }
 
-  .header .header.header_active .container {
+  .header.header_active .container {
     padding-top: 6px;
   }
 
-  .header .header.header_active .menu {
+  .header.header_active .menu {
     color: #202020;
   }
 
-  .header .header.header_active .nav__lang {
+  .header.header_active .nav__lang {
     color: rgba(255, 255, 255, 0.8);
     opacity: 1;
+  }
+
+  .header.header_active .btn-burger .line {
+    background-color: #fff;
   }
 
   .header .container {
@@ -1958,5 +1988,76 @@ body {
 
   .footer .footer__logo {
     max-width: 274px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .slogan {
+    line-height: 1;
+  }
+
+  .btn_main {
+    padding-left: 22px;
+    padding-right: 22px;
+    width: 100%;
+  }
+
+  .section-how-take .section__header {
+    max-width: 235px;
+  }
+
+  .section-how-take .section__header:after {
+    top: 75%;
+  }
+
+  .section-how-take .card {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  .section-how-take .card-dosage {
+    border: none;
+    padding: 0;
+    flex-basis: 184px;
+    margin-bottom: 8%;
+  }
+
+  .section-how-take .card-dosage:nth-child(n) .card-dosage__header {
+    color: #5e5e5e;
+  }
+
+  .section-how-take .card-dosage__header {
+    background: red;
+    font-family: "Open Sans", sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 1;
+    padding: 13px 30px;
+  }
+
+  .section-how-take .card-dosage:before {
+    display: none;
+  }
+
+  .section-how-take .card-dosage .bg-thumb,
+  .section-how-take .card-dosage__title,
+  .section-how-take .card-dosage .card__text {
+    display: none;
+  }
+
+  .section-producer {
+    padding-top: 0;
+  }
+
+  .section-producer .section__header {
+    max-width: 235px;
+  }
+
+  .section-producer .section__header:after {
+    top: 75%;
+  }
+
+  .container {
+    max-width: 300px;
   }
 }

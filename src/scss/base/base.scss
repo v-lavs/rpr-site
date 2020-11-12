@@ -54,6 +54,9 @@ body {
   span {
     display: inline-block;
   }
+  @include respond-to($xs){
+    line-height: 1;
+  }
 }
 
 .know-pharmacy {
@@ -85,6 +88,10 @@ body {
       margin-right: 5px;
     }
   }
+  .wrap-know-pharmacy {
+    display: flex;
+    justify-content: flex-end;
+  }
 
   @include respond-to($xl) {
     .cost {
@@ -96,10 +103,13 @@ body {
       font-size: 44px;
     }
   }
+  @include respond-to($md) {
+    padding-right: 0;
+  }
   @include respond-to($sm) {
     flex-wrap: wrap;
     flex-shrink: 1;
-    padding-right: 0;
+    text-align: center;
     .wrap-btn,
     .know-pharmacy__content {
       width: 100%;
@@ -111,6 +121,9 @@ body {
       span {
         font-size: 14px;
       }
+    }
+    .instructions{
+      justify-content: center;
     }
   }
 }
@@ -155,6 +168,7 @@ body {
     top: 60%;
     left: 100%;
   }
+
 }
 
 .color_warning {
@@ -275,11 +289,6 @@ body {
       margin-bottom: 18px;
     }
   }
-}
-
-.wrap-know-pharmacy {
-  display: flex;
-  justify-content: flex-end;
 }
 
 .thumb-rapira-cough {
