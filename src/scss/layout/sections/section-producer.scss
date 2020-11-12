@@ -1,35 +1,69 @@
-.section-producer{
+.section-producer {
   padding-top: 80px;
   color: $grey;
   padding-bottom: 12.5%;
-  .container{
+
+  .container {
     overflow: hidden;
   }
-  .section__header{
+
+  .section__header {
     margin-bottom: 90px;
   }
-  .section__content{
+
+  .section__content {
     display: flex;
     margin-bottom: 11%;
   }
-  .block-logo{
+
+  .block-logo {
     width: 20%;
     flex-shrink: 0;
   }
-  .producer-logo{
+
+  .producer-logo {
     display: block;
     max-width: 164px;
     height: auto;
   }
-  .dynamic-content{
+
+  .dynamic-content {
     margin-bottom: 35px;
   }
-  .link{
+
+  .link {
     color: #0090ff;
   }
 
-  @include respond-to($xl) {
-
+  @include respond-to($lg) {
+    padding-bottom: 20%;
+    .section__content {
+      flex-wrap: wrap;
+    }
+    .section__header {
+      margin-bottom: 50px;
+    }
+    .block-logo {
+      width: 100%;
+      margin-bottom: 40px;
+    }
+    .img-rapira {
+      position: relative;
+      bottom: -50px;
+    }
+    .thumb-rapira-cough {
+      overflow: hidden;
+      padding-top: 40px;
+    }
+  }
+  @include respond-to($md) {
+    .img-rapira {
+      bottom: -35px;
+      max-width: 85%;
+    }
+    .dynamic-content {
+      margin-bottom: 20px;
+    }
   }
 }
 

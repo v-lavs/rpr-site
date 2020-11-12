@@ -35,5 +35,15 @@
       font-size: 35px;
     }
   }
+  @include respond-to($md) {
+
+    &_xl {
+      font-size: 70px;
+    }
+
+    &_lg {
+      font-size: 26px;
+    }
+  }
 }
 

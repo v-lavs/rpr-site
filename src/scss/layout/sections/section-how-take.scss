@@ -63,6 +63,11 @@
   .step_1 {
     width: 100%;
 
+    .section__text {
+      width: 100%;
+      max-width: 506px;
+    }
+
     .step__content {
       justify-content: space-between;
       padding-bottom: 11%;
@@ -95,11 +100,6 @@
       width: 100%;
       min-height: 228px;
       margin-bottom: 5px;
-    }
-
-    .text-bold {
-      font-weight: 600;
-      margin-bottom: 7px;
     }
 
     &__text {
@@ -175,7 +175,7 @@
     &:nth-child(3) {
       .card-dosage__header,
       .card-dosage__title {
-        color: $bordo;
+        color: #e42313;
       }
 
       &:hover {
@@ -188,8 +188,6 @@
       font-family: $secondary-font;
       font-size: 42px;
       font-weight: 900;
-
-
     }
 
     &__title {
@@ -200,7 +198,17 @@
       margin-bottom: 20px;
     }
 
+    .text-bold {
+      font-weight: 600;
+      margin-bottom: 7px;
+    }
+
     .bg-thumb {
+      background-repeat: no-repeat;
+      background-position: center center;
+      -webkit-background-size: cover;
+      background-size: cover;
+      width: 100%;
       min-height: 486px;
       margin-bottom: 15px;
     }
@@ -243,6 +251,84 @@
         background-size: 100%;
         min-height: 160px;
       }
+    }
+  }
+  @include respond-to($lg) {
+    padding-bottom: 0;
+    .step .heading {
+      margin-bottom: 80px;
+    }
+    .step_1 {
+      .step__content{
+        justify-content: space-around;
+      }
+      .section__text {
+        max-width: 100%;
+        padding-bottom: 60px;
+      }
+
+      .heading {
+        margin-bottom: 25px;
+      }
+    }
+    .step_2,
+    .step_3 {
+      width: 100%;
+    }
+    .step_2 {
+      margin-bottom: 60px;
+    }
+    .aside {
+      flex-wrap: wrap;
+      margin-bottom: 11%;
+    }
+    .card-dosage__header,
+    .card-dosage__title {
+      font-size: 42px;
+    }
+    .card-dosage {
+      font-size: 16px;
+      width: 50%;
+      flex-basis: 410px;
+      margin-bottom: 40px;
+      &:last-child{
+        margin-bottom: 0;
+      }
+      .text-bold {
+        font-size: 22px;
+      }
+
+      .bg-thumb {
+        min-height: 486px;
+      }
+    }
+
+    .step__header {
+      margin-bottom: 20px;
+    }
+    .step__content {
+      padding-bottom: 9%;
+      flex-wrap: wrap;
+    }
+    .card {
+      margin-right: 43px;
+
+      .bg-thumb {
+        min-height: 228px;
+      }
+    }
+  }
+
+  @include respond-to($md){
+    padding-top: 40px;
+    .card-dosage{
+      margin-bottom: 20%;
+    }
+    .step__header:before {
+      top: -16px;
+    }
+    .aside {
+      margin-bottom: 16%;
     }
   }
 }

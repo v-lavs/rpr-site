@@ -22,4 +22,14 @@
       text-decoration: underline;
     }
   }
+
+  @include respond-to($lg) {
+   header .menu__item {
+      margin-left: 16px;
+
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+  }
 }

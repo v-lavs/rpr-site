@@ -2,16 +2,19 @@
   max-width: 1920px;
   width: 100%;
   margin: 0 auto;
-  -webkit-background-size: 100% auto;
-  background-size: 100% auto;
-}
+ }
 
 body {
   -webkit-font-smoothing: antialiased;
   font: 300 22px $main-font;
-  background: url(../assets/img/bg-body.png) top center no-repeat;
+  background: url(../assets/img/intro-gradient.svg) top center no-repeat;
+  -webkit-background-size: 100% auto;
+  background-size: 100% auto;
   @include respond-to($xxl) {
     font-size: 18px;
+  }
+  @include respond-to($md) {
+    font-size: 16px;
   }
 }
 
@@ -83,6 +86,11 @@ body {
   @include respond-to($xl) {
     .cost {
       font-size: 30px;
+    }
+  }
+  @include respond-to($lg) {
+    .cost {
+      font-size: 44px;
     }
   }
 }
@@ -227,6 +235,11 @@ body {
       }
     }
   }
+  @include respond-to($md){
+    p{
+      margin-bottom: 23px;
+    }
+  }
 }
 
 .wrap-know-pharmacy {
@@ -252,6 +265,6 @@ body {
     object-fit: cover;
   }
   @include respond-to($xl) {
-    margin-bottom: 50px;
+    margin-bottom: 85px;
   }
 }

@@ -22,6 +22,9 @@
 
   .part-left {
     padding-top: 60px;
+    .know-pharmacy{
+      padding-right: 0;
+    }
   }
 
   .slogan {
@@ -112,10 +115,76 @@
     .aside {
       align-items: flex-start;
     }
+    .top-content {
+      padding-top: 140px;
+    }
   }
-
+  @include respond-to($lg) {
+    .container  {
+      flex-wrap: wrap;
+    }
+    .top-content {
+      padding-top: 120px;
+    }
+    .part{
+      width: 100%;
+    }
+    .part-right{
+      order: -1;
+      .img_intro{
+        width: 150%;
+      }
+    }
+    .part-left{
+      padding-top: 0;
+      margin-top: -15%;
+    }
+    .wrap-thumb{
+      padding: 30px 45px;
+    }
+    .aside {
+      flex-wrap: wrap;
+    }
+    .composition {
+      margin-bottom: 40px;
+    }
+    .slogan {
+      margin-bottom: 50px;
+    }
+    .video-block .section__text {
+      padding-right: 0;
+      width: 100%;
+      text-align: left;
+    }
+  }
   @include respond-to($md) {
-
+    .part-right .img_intro {
+      width: 135%;
+    }
+    .top-content .section__text{
+      max-width: 50%;
+    }
+    .wrap-thumb {
+      padding: 15px 27px;
+    }
+    .composition {
+      margin-bottom: 25px;
+    }
+    .slogan {
+      margin-bottom: 25px;
+    }
+    .video-block {
+      padding-top: 3.5%;
+      .section__text {
+        margin-bottom: 54px;
+      }
+    }
+    .aside{
+      padding-bottom: 62px;
+      .know-pharmacy{
+        padding-top: 15px;
+      }
+    }
   }
 }
 

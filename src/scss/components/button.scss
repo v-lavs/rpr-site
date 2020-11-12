@@ -102,3 +102,20 @@
     }
   }
 }
+
+@include respond-to($lg) {
+  .btn_main{
+    font-size: 26px;
+  }
+}
+
+@include respond-to($md) {
+  .btn_play {
+    width: 67px;
+    height: 67px;
+    &:before {
+      border-width: 12.5px 0 12.5px 22px;
+      margin: 0 0 0 4px;
+    }
+  }
+}
