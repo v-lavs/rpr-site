@@ -1,13 +1,39 @@
-.heading{
+.heading {
   font-weight: 900;
 
-  &_big{
+  &_big {
     font-size: 120px;
   }
-  &_xl{
+
+  &_xl {
     font-size: 70px;
   }
-  &_lg{
+
+  &_lg {
     font-size: 44px;
   }
+
+  @include respond-to($xxl) {
+    &_big {
+      font-size: 100px;
+    }
+    &_xl {
+      font-size: 60px;
+    }
+    &_lg {
+      font-size: 42px;
+    }
+  }
+  @include respond-to($xl) {
+    &_big {
+      font-size: 80px;
+    }
+    &_xl {
+      font-size: 48px;
+    }
+    &_lg {
+      font-size: 35px;
+    }
+  }
 }
+

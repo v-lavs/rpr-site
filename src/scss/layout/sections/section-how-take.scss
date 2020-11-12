@@ -1,19 +1,18 @@
 .section-how-take {
   padding-top: 80px;
-  padding-bottom: 135px;
+  padding-bottom: 7.25%;
 
   .container {
     overflow: hidden;
   }
 
   .section__header {
-    margin-bottom: 120px;
+    margin-bottom: 7.5%;
   }
 
   .section__content {
     display: flex;
     flex-wrap: wrap;
-
     counter-reset: step;
   }
 
@@ -66,7 +65,7 @@
 
     .step__content {
       justify-content: space-between;
-      padding-bottom: 180px;
+      padding-bottom: 11%;
     }
   }
 
@@ -75,29 +74,27 @@
     .step__content {
       padding-left: 100px;
     }
-
-    .card {
-      width: 50%;
-      max-width: 238px;
-      margin-right: 33px;
-      padding: 5px;
-
-      &:last-child {
-        margin-right: 0;
-      }
-    }
   }
 
   .card {
     text-align: center;
+    width: 50%;
+    max-width: 238px;
+    margin-right: 33px;
+    padding: 5px;
+
+    &:last-child {
+      margin-right: 0;
+    }
 
     .bg-thumb {
       background-repeat: no-repeat;
       background-position: center center;
-      -webkit-background-size: cover;
-      background-size: cover;
+      -webkit-background-size: contain;
+      background-size: contain;
       width: 100%;
-      height: 228px;
+      min-height: 228px;
+      margin-bottom: 5px;
     }
 
     .text-bold {
@@ -191,6 +188,8 @@
       font-family: $secondary-font;
       font-size: 42px;
       font-weight: 900;
+
+
     }
 
     &__title {
@@ -211,11 +210,39 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 120px;
+    margin-bottom: 7.5%;
   }
 
   .section__text {
     width: 50%;
     padding-right: 20px;
+  }
+
+  @include respond-to($xxl) {
+    .card-dosage__header,
+    .card-dosage__title {
+      font-size: 30px;
+    }
+    .card-dosage .bg-thumb {
+      min-height: 430px;
+    }
+
+  }
+  @include respond-to($xl) {
+    .card-dosage {
+      width: 30%;
+    }
+    .card-dosage .bg-thumb {
+      min-height: 380px;
+    }
+    .card {
+      max-width: 220px;
+
+      .bg-thumb {
+        -webkit-background-size: 100%;
+        background-size: 100%;
+        min-height: 160px;
+      }
+    }
   }
 }

@@ -1,6 +1,6 @@
 .section-about {
-  padding-top: 160px;
-  padding-bottom: 182px;
+  padding-top: 8.5%;
+  padding-bottom: 10%;
   color: $grey;
 
   .container {
@@ -23,10 +23,12 @@
 
   .part-right {
     width: 56%;
+
   }
 
   .description {
     padding-top: 5px;
+
     &__item {
       position: relative;
       padding: 13px 60px 20px 50px;
@@ -34,10 +36,12 @@
       background-color: #f4f4f4;
       margin-bottom: 40px;
       min-height: 125px;
-      &:last-child{
+
+      &:last-child {
         margin-bottom: 0;
       }
-      &:before{
+
+      &:before {
         position: absolute;
         content: '';
         z-index: 2;
@@ -48,6 +52,13 @@
         left: 0;
         background-color: #000000;
       }
+    }
+  }
+
+  @include respond-to($xl) {
+    .part-right,
+    .part-left {
+      width: 50%;
     }
   }
 }

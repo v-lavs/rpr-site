@@ -29,11 +29,14 @@
   }
 
   .part-right {
-    padding-right: 52px;
-    text-align: right;
-
     .img_intro {
-      vertical-align: top;
+      position: relative;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 200%;
+      max-width: none;
+      z-index: -1;
     }
   }
 
@@ -58,15 +61,12 @@
         right: 8px;
         top: 50%;
         transform: translateY(-50%);
-
       }
-
     }
-
   }
 
   .video-block {
-    padding-top: 125px;
+    padding-top: 6.5%;
 
     .section__text {
       width: 50%;
@@ -107,4 +107,15 @@
       margin-right: 5px;
     }
   }
+
+  @include respond-to($xl) {
+    .aside {
+      align-items: flex-start;
+    }
+  }
+
+  @include respond-to($md) {
+
+  }
 }
+

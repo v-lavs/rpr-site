@@ -1,7 +1,7 @@
 .header {
   position: fixed;
-  background-image: linear-gradient(to right, #f8f7f7, #eeebeb);
-  width: 100%;
+  left: 0;
+  right: 0;
   z-index: 999;
 
   &.header_active {
@@ -57,8 +57,7 @@
     color: $dark;
     text-transform: uppercase;
     font-family: $helper-font;
-    bottom: -50%;
-    transform: translateY(10px);
+    bottom: -35%;
     left: 3%;
     opacity: 1;
     transition: opacity .35s;
@@ -76,6 +75,13 @@
     &:focus {
       text-decoration: underline;
     }
+  }
+  @include respond-to($lg) {
+
+  }
+
+  @include respond-to($md) {
+
   }
 }
 

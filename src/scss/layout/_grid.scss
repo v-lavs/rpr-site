@@ -5,7 +5,22 @@
 
 .container{
   width: 100%;
-  max-width: 1664px;
+  max-width: 1660px;
   padding: 0 15px;
   margin: 0 auto;
+  @include respond-to($xxl){
+    max-width: 1400px;
+  }
+  @include respond-to($xl){
+    max-width: 1180px;
+  }
+  @include respond-to($lg){
+    max-width: 920px;
+  }
+  @include respond-to($md){
+    max-width: 700px;
+  }
+  @include respond-to($sm){
+    max-width: 420px;
+  }
 }

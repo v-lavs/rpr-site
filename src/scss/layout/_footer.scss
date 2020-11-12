@@ -1,6 +1,6 @@
 .footer {
   width: 100%;
-  padding-bottom: 30vh;
+  padding-bottom: 18vh;
 
   .container {
     display: flex;
@@ -18,6 +18,9 @@
     height: auto;
     display: block;
     margin-bottom: 20px;
+    @include respond-to($xxl){
+      max-width: 300px;
+    }
   }
 
   .menu {
@@ -39,7 +42,9 @@
     font-size: 22px;
     font-weight: 300;
     padding: 58px 15px 136px;
-
+    @include respond-to($xxl){
+      font-size: 18px;
+    }
     &:before {
       position: absolute;
       content: '';

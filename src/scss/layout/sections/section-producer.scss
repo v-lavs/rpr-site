@@ -1,7 +1,7 @@
 .section-producer{
   padding-top: 80px;
   color: $grey;
-  padding-bottom: 418px;
+  padding-bottom: 12.5%;
   .container{
     overflow: hidden;
   }
@@ -10,6 +10,7 @@
   }
   .section__content{
     display: flex;
+    margin-bottom: 11%;
   }
   .block-logo{
     width: 20%;
@@ -26,29 +27,9 @@
   .link{
     color: #0090ff;
   }
-  .section__content{
-    margin-bottom: 182px;
+
+  @include respond-to($xl) {
+
   }
 }
 
-.wrap-know-pharmacy{
-  display: flex;
-  justify-content: flex-end;
-}
-
-.thumb-rapira-cough{
-  position: relative;
-  padding-top: 90px;
-  padding-bottom: 70px;
-  display: flex;
-  justify-content: flex-end;
-  padding-left: 38px;
-  margin-bottom: 150px;
-  .img-pack{
-    position: absolute;
-    bottom: 0;
-  }
-  .img{
-    object-fit: cover;
-  }
-}
