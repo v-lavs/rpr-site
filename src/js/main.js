@@ -43,6 +43,7 @@ $(document).ready(function () {
     // VIDEO PLAY
 
     var promotionVideo = $('#promotion-video').get(0);
+
     if (promotionVideo) {
         var playBtn = $('#playButton');
 
@@ -52,10 +53,12 @@ $(document).ready(function () {
 
         promotionVideo.addEventListener('play', function () {
             playBtn.hide();
+            document.getElementById('promotion-video').controls = true
         });
 
         promotionVideo.addEventListener('pause', function () {
             playBtn.show();
+            document.getElementById('promotion-video').controls = false
         });
     }
 
