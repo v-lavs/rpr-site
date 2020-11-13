@@ -36,9 +36,30 @@
   .dynamic-content {
     margin-bottom: 15%;
   }
-
+  .description-action {
+    font-family: $secondary-font;
+    font-size: 44px;
+    font-weight: 700;
+    margin-bottom: 38px;
+  }
   .section-producer {
     padding-top: 90px;
+  }
+  @include respond-to($lg){
+    .section__heading{
+      font-size: 70px;
+    }
+  }
+  @include  respond-to($md){
+    .description-action{
+      font-size: 26px;
+      margin-bottom: 30px;
+    }
+  }
+  @include  respond-to($xs){
+    .section__heading{
+      font-size: 42px;
+    }
   }
 }
 
@@ -61,18 +82,28 @@
       margin-right: 0;
     }
   }
-}
-
-
-.description-action {
-  font-family: $secondary-font;
-  font-size: 44px;
-  font-weight: 700;
-  margin-bottom: 38px;
+  @include  respond-to($xs){
+    .description-action{
+      font-size: 20px;
+    }
+    .page__title{
+      margin-bottom: 18px;
+    }
+    .instructions{
+      margin-bottom: 0;
+      .btn_small{
+        margin-right: 0;
+        margin-bottom: 17px;
+      }
+    }
+  }
 }
 
 article{
   .dynamic-content {
     margin-bottom: 15%;
+  }
+  @include respond-to($md){
+
   }
 }

@@ -402,7 +402,8 @@
       width: 100%;
       max-width: 228px;
       margin: 0 auto 50px;
-      .bg-thumb{
+
+      .bg-thumb {
         min-height: 175px;
       }
     }
@@ -415,17 +416,35 @@
       &:nth-child(n) {
         .card-dosage__header {
           color: #5e5e5e;
+          transition: .35s;
         }
       }
 
       &__header {
-        background: red;
         font-family: $main-font;
         font-size: 24px;
         font-weight: 300;
         line-height: 1;
         padding: 13px 30px;
+      }
 
+      &:hover,
+      &:focus {
+        .card-dosage__header {
+          color: $white;
+
+          &.mob-hover_warning {
+            background-color: $warning;
+          }
+
+          &.mob-hover_blue {
+            background-color: $blue;
+          }
+
+          &.mob-hover_red {
+            background-color: #bf1c0e;
+          }
+        }
       }
 
       &:before {

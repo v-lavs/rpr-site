@@ -8,7 +8,7 @@ body {
   -webkit-font-smoothing: antialiased;
   font: 300 22px $main-font;
   background: url(../assets/img/intro-gradient.svg) top center no-repeat;
-  -webkit-background-size: 100% auto;
+  -webkit-background-size: 100% 2405px;
   background-size: 100% auto;
   @include respond-to($xxl) {
     font-size: 18px;
@@ -117,11 +117,9 @@ body {
     .wrap-btn,
     .know-pharmacy__content {
       width: 100%;
-    }
-    .wrap-btn,
-    .cost{
       text-align: center;
     }
+
     .know-pharmacy__content {
       padding-left: 0;
       padding-top: 10px;
@@ -141,12 +139,21 @@ body {
   color: $grey;
   @include respond-to($md) {
     article {
-      margin-bottom: 100px;
+      margin-bottom: 75px;
+    }
+    .section-producer{
+      padding-top: 20px;
     }
   }
   @include respond-to($xs) {
     padding-top: 110px;
     padding-bottom: 140px;
+    .dynamic-content{
+      margin-bottom: 28%;
+    }
+    .section-producer{
+      padding-top: 0;
+    }
   }
 }
 
@@ -159,10 +166,15 @@ body {
 }
 
 .page__title {
-  width: 70%;
+  width: 75%;
   margin-bottom: 40px;
+  @include respond-to($md){
+    width: 100%;
+    line-height: 1.1;
+  }
   @include respond-to($xs){
     margin-bottom: 25px;
+    font-size: 33px;
   }
 }
 
@@ -338,6 +350,9 @@ body {
     img{
       margin-top: 10px;
       margin-bottom: 60px;
+    }
+    h3{
+      font-size: 16px;
     }
   }
 }

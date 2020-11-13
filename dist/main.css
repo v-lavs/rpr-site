@@ -119,7 +119,7 @@ body {
   -webkit-font-smoothing: antialiased;
   font: 300 22px "Open Sans", sans-serif;
   background: url(../assets/img/intro-gradient.svg) top center no-repeat;
-  -webkit-background-size: 100% auto;
+  -webkit-background-size: 100% 2405px;
   background-size: 100% auto;
 }
 
@@ -205,7 +205,7 @@ body {
 }
 
 .page__title {
-  width: 70%;
+  width: 75%;
   margin-bottom: 40px;
 }
 
@@ -924,6 +924,7 @@ body {
   left: 0;
   right: 0;
   z-index: 999;
+  background-color: transparent;
 }
 
 .header.header_active .container {
@@ -1189,6 +1190,13 @@ body {
   margin-bottom: 15%;
 }
 
+.page-instruction .description-action {
+  font-family: "Source Code Pro", monospace;
+  font-size: 44px;
+  font-weight: 700;
+  margin-bottom: 38px;
+}
+
 .page-instruction .section-producer {
   padding-top: 90px;
 }
@@ -1209,13 +1217,6 @@ body {
 
 .section-hero .btn_small:last-child {
   margin-right: 0;
-}
-
-.description-action {
-  font-family: "Source Code Pro", monospace;
-  font-size: 44px;
-  font-weight: 700;
-  margin-bottom: 38px;
 }
 
 article .dynamic-content {
@@ -1583,6 +1584,10 @@ article .dynamic-content {
   .footer .text-right p:last-child {
     margin-bottom: 0;
   }
+
+  .page-instruction .section__heading {
+    font-size: 70px;
+  }
 }
 
 @media only screen and (max-width: 940px) {
@@ -1595,7 +1600,16 @@ article .dynamic-content {
   }
 
   .page article {
-    margin-bottom: 100px;
+    margin-bottom: 75px;
+  }
+
+  .page .section-producer {
+    padding-top: 20px;
+  }
+
+  .page__title {
+    width: 100%;
+    line-height: 1.1;
   }
 
   .upload-pdf {
@@ -1746,6 +1760,11 @@ article .dynamic-content {
     max-width: 320px;
   }
 
+  .page-instruction .description-action {
+    font-size: 26px;
+    margin-bottom: 30px;
+  }
+
   .page-about .section-producer {
     padding-top: 20px;
   }
@@ -1765,10 +1784,6 @@ article .dynamic-content {
   .know-pharmacy .wrap-btn,
   .know-pharmacy .know-pharmacy__content {
     width: 100%;
-  }
-
-  .know-pharmacy .wrap-btn,
-  .know-pharmacy .cost {
     text-align: center;
   }
 
@@ -2036,12 +2051,21 @@ article .dynamic-content {
     padding-bottom: 140px;
   }
 
+  .page .dynamic-content {
+    margin-bottom: 28%;
+  }
+
+  .page .section-producer {
+    padding-top: 0;
+  }
+
   .page__sub-title {
     margin-bottom: 10px;
   }
 
   .page__title {
     margin-bottom: 25px;
+    font-size: 33px;
   }
 
   .upload-pdf {
@@ -2057,6 +2081,10 @@ article .dynamic-content {
   .dynamic-content img {
     margin-top: 10px;
     margin-bottom: 60px;
+  }
+
+  .dynamic-content h3 {
+    font-size: 16px;
   }
 
   .thumb-rapira-cough {
@@ -2112,15 +2140,35 @@ article .dynamic-content {
 
   .section-how-take .card-dosage:nth-child(n) .card-dosage__header {
     color: #5e5e5e;
+    transition: .35s;
   }
 
   .section-how-take .card-dosage__header {
-    background: red;
     font-family: "Open Sans", sans-serif;
     font-size: 24px;
     font-weight: 300;
     line-height: 1;
     padding: 13px 30px;
+  }
+
+  .section-how-take .card-dosage:hover .card-dosage__header,
+  .section-how-take .card-dosage:focus .card-dosage__header {
+    color: #fff;
+  }
+
+  .section-how-take .card-dosage:hover .card-dosage__header.mob-hover_warning,
+  .section-how-take .card-dosage:focus .card-dosage__header.mob-hover_warning {
+    background-color: #f49600;
+  }
+
+  .section-how-take .card-dosage:hover .card-dosage__header.mob-hover_blue,
+  .section-how-take .card-dosage:focus .card-dosage__header.mob-hover_blue {
+    background-color: #0070ba;
+  }
+
+  .section-how-take .card-dosage:hover .card-dosage__header.mob-hover_red,
+  .section-how-take .card-dosage:focus .card-dosage__header.mob-hover_red {
+    background-color: #bf1c0e;
   }
 
   .section-how-take .card-dosage:before {
@@ -2137,10 +2185,6 @@ article .dynamic-content {
     min-height: 123px;
   }
 
-  .section-producer {
-    padding-top: 0;
-  }
-
   .section-producer .section__header {
     max-width: 235px;
   }
@@ -2151,6 +2195,27 @@ article .dynamic-content {
 
   .container {
     max-width: 300px;
+  }
+
+  .page-instruction .section__heading {
+    font-size: 42px;
+  }
+
+  .section-hero .description-action {
+    font-size: 20px;
+  }
+
+  .section-hero .page__title {
+    margin-bottom: 18px;
+  }
+
+  .section-hero .instructions {
+    margin-bottom: 0;
+  }
+
+  .section-hero .instructions .btn_small {
+    margin-right: 0;
+    margin-bottom: 17px;
   }
 
   .page-404 .thumb-rapira-cough {
