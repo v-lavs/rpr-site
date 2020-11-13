@@ -63,13 +63,16 @@
   }
 }
 
-.section-producer {
-  //padding-bottom: 234px;
-}
 
 .description-action {
   font-family: $secondary-font;
   font-size: 44px;
   font-weight: 700;
   margin-bottom: 38px;
+}
+
+article{
+  .dynamic-content {
+    margin-bottom: 15%;
+  }
 }

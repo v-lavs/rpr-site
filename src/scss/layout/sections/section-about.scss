@@ -99,4 +99,9 @@
       }
     }
   }
+  @include respond-to($xs){
+    .part-right .description__item{
+      min-height: 123px;
+    }
+  }
 }

@@ -358,15 +358,16 @@
       margin-bottom: 50px;
     }
     .step_1 {
-      .step__content{
+      .step__content {
         padding-left: 0;
       }
+
       .heading {
         padding-bottom: 25px;
       }
     }
     .card-dosage__header,
-    .card-dosage__title{
+    .card-dosage__title {
       font-size: 32px;
     }
     .card {
@@ -382,22 +383,37 @@
   @include respond-to($xs) {
     .section__header {
       max-width: 235px;
+      margin-bottom: 24.5%;
 
       &:after {
         top: 75%;
       }
     }
+    .aside {
+      margin-bottom: 33%;
+    }
+    .step_1 .step__content {
+      padding-top: 20px;
+    }
+    .step_2 {
+      margin-bottom: 10px;
+    }
     .card {
       width: 100%;
-      margin-bottom: 50px;
+      max-width: 228px;
+      margin: 0 auto 50px;
+      .bg-thumb{
+        min-height: 175px;
+      }
     }
     .card-dosage {
       border: none;
       padding: 0;
       flex-basis: 184px;
       margin-bottom: 8%;
+
       &:nth-child(n) {
-        .card-dosage__header{
+        .card-dosage__header {
           color: #5e5e5e;
         }
       }

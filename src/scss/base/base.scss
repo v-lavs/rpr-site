@@ -54,7 +54,8 @@ body {
   span {
     display: inline-block;
   }
-  @include respond-to($xs){
+
+  @include respond-to($xs) {
     line-height: 1;
   }
 }
@@ -62,6 +63,7 @@ body {
 .know-pharmacy {
   display: flex;
   align-items: flex-end;
+  justify-content: flex-end;
   font-size: 16px;
   padding-right: 60px;
   flex-shrink: 0;
@@ -88,6 +90,7 @@ body {
       margin-right: 5px;
     }
   }
+
   .wrap-know-pharmacy {
     display: flex;
     justify-content: flex-end;
@@ -122,7 +125,7 @@ body {
         font-size: 14px;
       }
     }
-    .instructions{
+    .instructions {
       justify-content: center;
     }
   }
@@ -131,11 +134,19 @@ body {
 .page {
   padding-top: 160px;
   color: $grey;
+  @include respond-to($xs){
+    padding-top: 110px;
+   padding-bottom: 140px;
+  }
+
 }
 
 .page__sub-title {
   font-family: $secondary-font;
   font-weight: 700;
+  @include respond-to($xs){
+    margin-bottom: 10px;
+  }
 }
 
 .page__title {
@@ -147,10 +158,6 @@ body {
 .section__heading {
   color: #000000;
   font-family: $secondary-font;
-}
-
-.page__title_xl {
-  font-size: 70px;
 }
 
 .section__header {
@@ -200,7 +207,7 @@ body {
     text-align: center;
     transition: background-color .4s;
     margin-right: 18px;
-
+    flex-shrink: 0;
     .icon-svg {
       width: auto;
       transition: .4s;
@@ -216,6 +223,9 @@ body {
         fill: #ffffff;
       }
     }
+  }
+  @include respond-to($md){
+    font-size: 26px;
   }
 }
 
@@ -283,11 +293,25 @@ body {
     p {
       margin-bottom: 23px;
     }
+    h2{
+      font-size: 26px;
+      margin-top: 68px;
+    }
+    ul{
+      li{
+        width: 100%;
+      }
+    }
+    img{
+      margin-top: 45px;
+      margin-bottom: 100px;
+    }
   }
   @include respond-to($sm) {
     p {
       margin-bottom: 18px;
     }
+
   }
 }
 
@@ -306,7 +330,7 @@ body {
   }
 
   .img {
-    //object-fit: cover;
+    object-fit: cover;
   }
 
   @include respond-to($xxl) {
@@ -328,16 +352,20 @@ body {
   @include respond-to($md) {
     .img-rapira {
       bottom: -35px;
-      max-width: 85%;
+      width: 85%;
     }
     .dynamic-content {
       margin-bottom: 20px;
     }
   }
-  @include respond-to($sm){
+  @include respond-to($sm) {
     margin-bottom: 44px;
-    .img-rapira{
-      max-width: 100%;
+    padding-left: 0;
+    .img-rapira {
+      width: 100%;
     }
   }
-}
+  @include respond-to($xs){
+    padding-top: 0;
+  }
+ }

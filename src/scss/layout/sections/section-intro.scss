@@ -210,5 +210,11 @@
     }
 
   }
+
+  @include respond-to($xs) {
+    .part-right .img_intro {
+      width: 140vw;
+    }
+  }
 }
 
