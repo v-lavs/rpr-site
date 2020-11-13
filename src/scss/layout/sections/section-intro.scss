@@ -212,8 +212,21 @@
   }
 
   @include respond-to($xs) {
-    .part-right .img_intro {
-      width: 140vw;
+    .part-right {
+      .img_intro {
+        width: 140vw;
+      }
+    }
+    .part-left{
+      position: relative;
+      .heading_lg{
+        padding-top: 40px;
+      }
+      .composition{
+        position: absolute;
+        top: 13%;
+        z-index: 1;
+      }
     }
   }
 }

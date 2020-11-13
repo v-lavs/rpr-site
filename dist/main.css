@@ -2150,6 +2150,20 @@ article .dynamic-content {
     width: 140vw;
   }
 
+  .section-intro .part-left {
+    position: relative;
+  }
+
+  .section-intro .part-left .heading_lg {
+    padding-top: 40px;
+  }
+
+  .section-intro .part-left .composition {
+    position: absolute;
+    top: 13%;
+    z-index: 1;
+  }
+
   .section-how-take .section__header {
     max-width: 235px;
     margin-bottom: 24.5%;
