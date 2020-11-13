@@ -2,4 +2,10 @@
   article{
     margin-bottom: 200px;
   }
+  @include respond-to($xs){
+    bottom: 85px;
+    .section-producer{
+      padding-bottom: 0;
+    }
+  }
 }

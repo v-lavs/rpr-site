@@ -4,4 +4,9 @@
   .page__title {
     margin-bottom: 12px;
   }
+  @include respond-to($xs) {
+    .thumb-rapira-cough{
+      padding-top: 0;
+    }
+  }
 }
