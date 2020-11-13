@@ -153,6 +153,7 @@ body {
     }
     .section-producer{
       padding-top: 0;
+      padding-bottom: 0;
     }
   }
 }
@@ -198,6 +199,11 @@ body {
     width: 100vw;
     top: 60%;
     left: 100%;
+  }
+  @include respond-to($sm){
+    &:after {
+      top: 75%;
+    }
   }
 
 }
@@ -349,7 +355,7 @@ body {
 }
 
 .instruction-content{
-  margin-bottom: 15%;
+  margin-bottom: 7%;
   p{
     margin-bottom: 5px;
   }
@@ -361,7 +367,7 @@ body {
     margin-top: 25px;
   }
   h4{
-    font-size: 18px;
+    font-size: 22px;
     font-weight: 300;
     margin-top: 22px;
     margin-bottom: 5px;

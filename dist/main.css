@@ -329,7 +329,7 @@ body {
 }
 
 .instruction-content {
-  margin-bottom: 15%;
+  margin-bottom: 7%;
 }
 
 .instruction-content p {
@@ -345,7 +345,7 @@ body {
 }
 
 .instruction-content h4 {
-  font-size: 18px;
+  font-size: 22px;
   font-weight: 300;
   margin-top: 22px;
   margin-bottom: 5px;
@@ -1211,6 +1211,10 @@ body {
   margin-bottom: 38px;
 }
 
+.page-instruction .upload-pdf {
+  margin-bottom: 70px;
+}
+
 .page-instruction .section-producer {
   padding-top: 90px;
 }
@@ -1602,6 +1606,10 @@ article .dynamic-content {
   .page-instruction .section__heading {
     font-size: 70px;
   }
+
+  .page-instruction .upload-pdf {
+    margin-bottom: 0;
+  }
 }
 
 @media only screen and (max-width: 940px) {
@@ -1825,6 +1833,10 @@ article .dynamic-content {
 
   .know-pharmacy .instructions {
     justify-content: center;
+  }
+
+  .section__header:after {
+    top: 75%;
   }
 
   .dynamic-content p {
@@ -2098,6 +2110,7 @@ article .dynamic-content {
 
   .page .section-producer {
     padding-top: 0;
+    padding-bottom: 0;
   }
 
   .page__sub-title {
