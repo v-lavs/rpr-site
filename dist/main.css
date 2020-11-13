@@ -297,12 +297,6 @@ body {
   margin-top: 55px;
 }
 
-.dynamic-content h3 {
-  font-size: 22px;
-  font-weight: 300;
-  text-transform: uppercase;
-}
-
 .dynamic-content ul {
   display: flex;
   flex-wrap: wrap;
@@ -332,6 +326,29 @@ body {
   background-position: center center;
   width: 44px;
   height: 27px;
+}
+
+.instruction-content {
+  margin-bottom: 15%;
+}
+
+.instruction-content p {
+  margin-bottom: 5px;
+}
+
+.instruction-content h3 {
+  font-size: 22px;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  margin-top: 25px;
+}
+
+.instruction-content h4 {
+  font-size: 18px;
+  font-weight: 300;
+  margin-top: 22px;
+  margin-bottom: 5px;
 }
 
 .thumb-rapira-cough {
@@ -1156,6 +1173,7 @@ body {
   padding-top: 13px;
   padding-bottom: 20px;
   margin-bottom: 20px;
+  margin-top: 20px;
   color: #fff;
   font-weight: 700;
 }
@@ -1184,10 +1202,6 @@ body {
 
 .page-instruction .application.bg-application_danger:before {
   background-color: #e42313;
-}
-
-.page-instruction .dynamic-content {
-  margin-bottom: 15%;
 }
 
 .page-instruction .description-action {
@@ -1634,6 +1648,19 @@ article .dynamic-content {
     margin-bottom: 100px;
   }
 
+  .instruction-content p {
+    margin-bottom: 10px;
+  }
+
+  .instruction-content h3 {
+    font-size: 18px;
+  }
+
+  .instruction-content h4 {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+
   .thumb-rapira-cough .img-rapira {
     bottom: -35px;
     width: 85%;
@@ -2039,6 +2066,20 @@ article .dynamic-content {
   .footer .footer__logo {
     max-width: 274px;
   }
+
+  .page-instruction .section__heading {
+    font-size: 50px;
+  }
+
+  .section-hero .instructions {
+    margin-bottom: 0;
+    width: 80%;
+  }
+
+  .section-hero .instructions .btn_small {
+    margin-right: 0;
+    margin-bottom: 17px;
+  }
 }
 
 @media only screen and (max-width: 480px) {
@@ -2083,8 +2124,17 @@ article .dynamic-content {
     margin-bottom: 60px;
   }
 
-  .dynamic-content h3 {
+  .instruction-content {
+    margin-bottom: 30%;
+  }
+
+  .instruction-content h3 {
     font-size: 16px;
+  }
+
+  .instruction-content h4 {
+    font-size: 14px;
+    margin-bottom: 0;
   }
 
   .thumb-rapira-cough {
@@ -2210,12 +2260,7 @@ article .dynamic-content {
   }
 
   .section-hero .instructions {
-    margin-bottom: 0;
-  }
-
-  .section-hero .instructions .btn_small {
-    margin-right: 0;
-    margin-bottom: 17px;
+    width: 100%;
   }
 
   .page-404 .thumb-rapira-cough {
