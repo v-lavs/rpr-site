@@ -35,14 +35,28 @@ $(document).ready(function () {
             jQuery(".header").removeClass('header_active');
         }
     }
+
     $(document).on('scroll', function () {
         onHeaderScrol()
     });
 
-// VIDEO PLAY
+    // VIDEO PLAY
 
-    $('#playButton').click(function(){
-        $('video')[0].play();
-        $('#playButton').hide();
-    })
+    var promotionVideo = $('#promotion-video').get(0);
+    if (promotionVideo) {
+        var playBtn = $('#playButton');
+
+        playBtn.click(function () {
+            promotionVideo.play();
+        });
+
+        promotionVideo.addEventListener('play', function () {
+            playBtn.hide();
+        });
+
+        promotionVideo.addEventListener('pause', function () {
+            playBtn.show();
+        });
+    }
+
 });

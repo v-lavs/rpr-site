@@ -5,12 +5,8 @@
   z-index: 999;
 
   &.header_active {
-    transition: padding-top .45s, transform .5s ease-in;
-
     .container {
-      position: relative;
       padding-top: 18px;
-      z-index: 999;
     }
 
     .menu {
@@ -41,6 +37,7 @@
     background-image: linear-gradient(95deg, #ff5547 0%, #bf1c0e 100%);
     transform-origin: 100% 0;
     transform: skew(0deg, 1deg);
+    transition: transform .25s ease-in;
     -webkit-backface-visibility: hidden;
   }
 
@@ -49,6 +46,8 @@
     padding-left: 135px;
     padding-top: 40px;
     padding-bottom: 23px;
+    transition: padding-top .25s ease-in;
+    z-index: 510;
   }
 
   &__nav {
@@ -249,5 +248,5 @@
   bottom: 0;
   background-color: #000;
   opacity: .5;
-  z-index: 800;
+  z-index: 500;
 }
