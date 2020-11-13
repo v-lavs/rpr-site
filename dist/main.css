@@ -1597,6 +1597,10 @@ article .dynamic-content {
     padding-right: 0;
   }
 
+  .page article {
+    margin-bottom: 100px;
+  }
+
   .upload-pdf {
     font-size: 26px;
   }
@@ -1744,6 +1748,10 @@ article .dynamic-content {
   .footer .footer__logo {
     max-width: 320px;
   }
+
+  .page-about .section-producer {
+    padding-top: 20px;
+  }
 }
 
 @media only screen and (max-width: 760px) {
@@ -1754,12 +1762,17 @@ article .dynamic-content {
   .know-pharmacy {
     flex-wrap: wrap;
     flex-shrink: 1;
-    text-align: center;
+    padding-bottom: 0;
   }
 
   .know-pharmacy .wrap-btn,
   .know-pharmacy .know-pharmacy__content {
     width: 100%;
+  }
+
+  .know-pharmacy .wrap-btn,
+  .know-pharmacy .cost {
+    text-align: center;
   }
 
   .know-pharmacy .know-pharmacy__content {
@@ -2034,6 +2047,10 @@ article .dynamic-content {
     margin-bottom: 25px;
   }
 
+  .upload-pdf {
+    font-size: 20px;
+  }
+
   .dynamic-content h2 {
     font-size: 20px;
     margin-top: 5px;
@@ -2141,10 +2158,6 @@ article .dynamic-content {
 
   .page-404 .thumb-rapira-cough {
     padding-top: 0;
-  }
-
-  .page-about {
-    bottom: 85px;
   }
 
   .page-about .section-producer {

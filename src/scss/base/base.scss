@@ -112,10 +112,15 @@ body {
   @include respond-to($sm) {
     flex-wrap: wrap;
     flex-shrink: 1;
-    text-align: center;
+    padding-bottom: 0;
+
     .wrap-btn,
     .know-pharmacy__content {
       width: 100%;
+    }
+    .wrap-btn,
+    .cost{
+      text-align: center;
     }
     .know-pharmacy__content {
       padding-left: 0;
@@ -134,11 +139,15 @@ body {
 .page {
   padding-top: 160px;
   color: $grey;
+  @include respond-to($md) {
+    article {
+      margin-bottom: 100px;
+    }
+  }
   @include respond-to($xs) {
     padding-top: 110px;
     padding-bottom: 140px;
   }
-
 }
 
 .page__sub-title {
@@ -231,6 +240,9 @@ body {
 
   @include respond-to($md) {
     font-size: 26px;
+  }
+  @include respond-to($xs) {
+    font-size: 20px;
   }
 }
 

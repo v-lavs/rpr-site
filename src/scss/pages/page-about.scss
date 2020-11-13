@@ -2,8 +2,13 @@
   article{
     margin-bottom: 200px;
   }
+  @include respond-to($md){
+
+    .section-producer{
+      padding-top: 20px;
+    }
+  }
   @include respond-to($xs){
-    bottom: 85px;
     .section-producer{
       padding-bottom: 0;
     }
