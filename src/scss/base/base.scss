@@ -185,27 +185,31 @@ body {
   font-family: $secondary-font;
 }
 
-.section__header {
-  position: relative;
-  display: inline-block;
-  padding-right: 65px;
-
-  &:after {
-    position: absolute;
-    content: '';
-    display: block;
-    background-color: #000000;
-    height: 3px;
-    width: 100vw;
-    top: 60%;
-    left: 100%;
-  }
-  @include respond-to($sm){
+.section__heading {
+  overflow: hidden;
+  display: inline;
+  &.decor{
     &:after {
-      top: 75%;
+      position: relative;
+      content: '';
+      display: inline-block;
+      vertical-align: middle;
+      background-color: #000000;
+      height: 3px;
+      width: 100%;
+      //top: 60%;
+      //left: 100%;
+      margin-right: -100%;
+      right: -65px;
     }
   }
-
+  @include respond-to($md){
+    &.decor{
+      &:after {
+        right: -15px;
+      }
+    }
+  }
 }
 
 .color_warning {

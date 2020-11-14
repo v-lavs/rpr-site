@@ -58,22 +58,12 @@
     padding-top: 40px;
     .section__header {
       margin-bottom: 25px;
-      padding-right: 15px;
     }
     .producer-logo {
       max-width: 90px;
     }
     .section__content {
       margin-bottom: 3%;
-    }
-  }
-  @include respond-to($xs){
-
-    .section__header {
-      max-width: 235px;
-      &:after {
-        top: 75%;
-      }
     }
   }
 }
