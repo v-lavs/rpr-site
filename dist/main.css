@@ -360,10 +360,16 @@ body {
   position: relative;
   padding-top: 90px;
   padding-bottom: 70px;
-  display: flex;
-  justify-content: flex-end;
   padding-left: 38px;
   margin-bottom: 150px;
+}
+
+.thumb-rapira-cough img {
+  display: block;
+}
+
+.thumb-rapira-cough .img-rapira {
+  margin-left: auto;
 }
 
 .thumb-rapira-cough .img-pack {

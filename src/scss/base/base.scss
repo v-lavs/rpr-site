@@ -420,10 +420,16 @@ body {
   position: relative;
   padding-top: 90px;
   padding-bottom: 70px;
-  display: flex;
-  justify-content: flex-end;
   padding-left: 38px;
   margin-bottom: 150px;
+  
+  img {
+    display: block;
+  }
+
+  .img-rapira {
+    margin-left: auto;
+  }
 
   .img-pack {
     position: absolute;
