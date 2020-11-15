@@ -1478,16 +1478,16 @@ article .dynamic-content {
     margin-bottom: 11%;
   }
 
-  .section-how-take .card-dosage__header,
-  .section-how-take .card-dosage__title {
-    font-size: 42px;
-  }
-
   .section-how-take .card-dosage {
     font-size: 16px;
     width: 50%;
     flex-basis: 385px;
     margin-bottom: 40px;
+  }
+
+  .section-how-take .card-dosage__header,
+  .section-how-take .card-dosage__title {
+    font-size: 42px;
   }
 
   .section-how-take .card-dosage:last-child {
@@ -1900,7 +1900,6 @@ article .dynamic-content {
 
   .section-how-take .section__header {
     margin-bottom: 16.5%;
-    padding-right: 15px;
   }
 
   .section-how-take .step_1 .section__text {
@@ -2177,7 +2176,6 @@ article .dynamic-content {
   }
 
   .section-how-take .section__header {
-    max-width: 235px;
     margin-bottom: 24.5%;
   }
 

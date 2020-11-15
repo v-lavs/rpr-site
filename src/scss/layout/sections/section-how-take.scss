@@ -239,9 +239,9 @@
   @include respond-to($xl) {
     .card-dosage {
       width: 30%;
-    }
-    .card-dosage .bg-thumb {
-      min-height: 380px;
+      .bg-thumb {
+        min-height: 380px;
+      }
     }
     .card {
       max-width: 220px;
@@ -283,15 +283,16 @@
       flex-wrap: wrap;
       margin-bottom: 11%;
     }
-    .card-dosage__header,
-    .card-dosage__title {
-      font-size: 42px;
-    }
+
     .card-dosage {
       font-size: 16px;
       width: 50%;
       flex-basis: 385px;
       margin-bottom: 40px;
+      &__header,
+      &__title {
+        font-size: 42px;
+      }
 
       &:last-child {
         margin-bottom: 0;
@@ -321,7 +322,6 @@
       }
     }
   }
-
   @include respond-to($md) {
     padding-top: 40px;
     .card-dosage {
@@ -337,7 +337,6 @@
   @include respond-to($sm) {
     .section__header {
       margin-bottom: 16.5%;
-      padding-right: 15px;
     }
     .step_1 .section__text {
       padding-bottom: 13px;
@@ -382,7 +381,6 @@
   }
   @include respond-to($xs) {
     .section__header {
-      max-width: 235px;
       margin-bottom: 24.5%;
 
       &:after {
