@@ -189,24 +189,40 @@ body {
   overflow: hidden;
   display: inline;
   &.decor{
+    position: relative;
     &:after {
-      position: relative;
+      position: absolute;
       content: '';
       display: inline-block;
       vertical-align: middle;
       background-color: #000000;
       height: 3px;
-      width: 100%;
-      //top: 60%;
-      //left: 100%;
-      margin-right: -100%;
-      right: -65px;
+      width: 100vw;
+      left: 100%;
+      margin-left: 65px;
+      bottom: 30px;
+    }
+  }
+  @include respond-to($xl){
+    &.decor{
+      &:after {
+        margin-left: 28px;
+        bottom: 23px;
+      }
     }
   }
   @include respond-to($md){
     &.decor{
       &:after {
-        right: -15px;
+        margin-left: 15px;
+        bottom: 30px;
+      }
+    }
+  }
+  @include respond-to($sm){
+    &.decor{
+      &:after {
+        bottom: 20px;
       }
     }
   }

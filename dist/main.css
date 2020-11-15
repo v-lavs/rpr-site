@@ -220,16 +220,21 @@ body {
   display: inline;
 }
 
-.section__heading.decor:after {
+.section__heading.decor {
   position: relative;
+}
+
+.section__heading.decor:after {
+  position: absolute;
   content: '';
   display: inline-block;
   vertical-align: middle;
   background-color: #000000;
   height: 3px;
-  width: 100%;
-  margin-right: -100%;
-  right: -65px;
+  width: 100vw;
+  left: 100%;
+  margin-left: 65px;
+  bottom: 30px;
 }
 
 .color_warning {
@@ -1305,6 +1310,11 @@ article .dynamic-content {
     font-size: 30px;
   }
 
+  .section__heading.decor:after {
+    margin-left: 28px;
+    bottom: 23px;
+  }
+
   .thumb-rapira-cough {
     margin-bottom: 85px;
   }
@@ -1635,7 +1645,8 @@ article .dynamic-content {
   }
 
   .section__heading.decor:after {
-    right: -15px;
+    margin-left: 15px;
+    bottom: 30px;
   }
 
   .upload-pdf {
@@ -1837,6 +1848,10 @@ article .dynamic-content {
 
   .know-pharmacy .instructions {
     justify-content: center;
+  }
+
+  .section__heading.decor:after {
+    bottom: 20px;
   }
 
   .dynamic-content p {
