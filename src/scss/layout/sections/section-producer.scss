@@ -50,11 +50,11 @@
 
   }
   @include respond-to($md) {
-        .dynamic-content {
+    .dynamic-content {
       margin-bottom: 20px;
     }
   }
-  @include respond-to($sm){
+  @include respond-to($sm) {
     padding-top: 40px;
     .section__header {
       margin-bottom: 25px;
