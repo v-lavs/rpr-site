@@ -33,7 +33,26 @@
       background-color: #e42313;
     }
   }
+  .tab-content {
+    position: relative;
+    overflow: hidden;
+  }
 
+  .tab-content__item {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    opacity: 0;
+    z-index: 1;
+    &.active {
+      position: relative;
+      opacity: 1;
+      transition: opacity .5s ease-in;
+      z-index: 2;
+    }
+  }
   .description-action {
     font-family: $secondary-font;
     font-size: 44px;

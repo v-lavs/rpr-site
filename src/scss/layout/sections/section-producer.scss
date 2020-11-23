@@ -47,6 +47,9 @@
       width: 100%;
       margin-bottom: 40px;
     }
+    .know-pharmacy{
+      padding-right: 0;
+    }
 
   }
   @include respond-to($md) {

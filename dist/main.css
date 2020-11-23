@@ -1212,6 +1212,28 @@ body {
   background-color: #e42313;
 }
 
+.page-instruction .tab-content {
+  position: relative;
+  overflow: hidden;
+}
+
+.page-instruction .tab-content__item {
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  opacity: 0;
+  z-index: 1;
+}
+
+.page-instruction .tab-content__item.active {
+  position: relative;
+  opacity: 1;
+  transition: opacity .5s ease-in;
+  z-index: 2;
+}
+
 .page-instruction .description-action {
   font-family: "Source Code Pro", monospace;
   font-size: 44px;
@@ -1573,6 +1595,10 @@ article .dynamic-content {
   .section-producer .block-logo {
     width: 100%;
     margin-bottom: 40px;
+  }
+
+  .section-producer .know-pharmacy {
+    padding-right: 0;
   }
 
   .container {

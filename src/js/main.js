@@ -16,10 +16,27 @@ $(document).ready(function () {
         var url = $(this).attr('data-link');
         var price = $(this).attr('data-price');
 
-        var pharma_block = $(this).parents('.know-pharmacy')
+        var pharma_block = $(this).parents('.know-pharmacy');
         pharma_block.find('.cost').html(price);
         pharma_block.find('.btn_find').attr('href', url);
     });
+
+    //TABS
+    const tabLink = $('.tab-nav__item');
+    const tabContentItem = $('.tab-content__item');
+    tabLink.click(function (e) {
+        e.preventDefault();
+        tabLink.removeClass('btn_active');
+        tabContentItem.removeClass('active');
+        $(e.target).addClass('btn_active');
+        $($(e.currentTarget).attr('href')).addClass('active');
+
+        var title = $(this).attr('data-title');
+        var title_instr = $(this).parents('.page-instruction');
+        title_instr.find('.page__title').html(title)
+    });
+
+
 
     //MOBILE MENU
     var nav = $('.header__nav');
