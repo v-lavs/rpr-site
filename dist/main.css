@@ -532,6 +532,7 @@ body {
 
 .section-intro .part-left .know-pharmacy {
   padding-right: 0;
+  justify-content: flex-start;
 }
 
 .section-intro .slogan {
