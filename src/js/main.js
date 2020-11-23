@@ -8,6 +8,18 @@
 // CUSTOM SCRIPTS
 
 $(document).ready(function () {
+    //
+    $('.know-pharmacy__content .instructions a').click(function (e) {
+        e.preventDefault();
+        $(this).parent().find('a').removeClass('btn_active');
+        $(this).addClass('btn_active');
+        var url = $(this).attr('data-link');
+        var price = $(this).attr('data-price');
+
+        var pharma_block = $(this).parents('.know-pharmacy')
+        pharma_block.find('.cost').html(price);
+        pharma_block.find('.btn_find').attr('href', url);
+    });
 
     //MOBILE MENU
     var nav = $('.header__nav');
